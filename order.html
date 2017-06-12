@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Интернет для дома | Дианэт</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/lightbox.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+  <link rel="stylesheet" href="assets/css/custom-carousel.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="main-menu">
+        <div class="logo"><a href="#"><img src="assets/images/logo.svg" alt="Дианэт"></a></div>
+        <div class="main-menu__city">
+          <span>ваш&nbsp;город:</span>
+          <div class="dropdown">
+            <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#">
+              Барнаул
+              <img src="assets/images/dropdown.svg">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Барнаул</a></li>
+              <li><a href="#">Бийск</a></li>
+              <li><a href="#">Заринск</a></li>
+              <li><a href="#">Рубцовск</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-menu__phone">
+          <span>(3852) 567-567</span> 
+          <a href="#" data-toggle="modal" data-target="#contactModal">
+            заказать&nbsp;звонок
+          </a>
+        </div>
+        <div class="main-menu__profile">
+          <a href="#">
+            <img src="assets/images/user1.png" alt="Пользователь Дианэт">
+            <span>Алексей Понамарёв</span>
+          </a>
+        </div>
+      </div>
+      <div class="nav-menu">
+        <a href="#" class="active">услуги для бизнеса</a>
+        <a href="#">услуги для дома</a>
+        <a href="#">госсектору</a>
+        <a href="#">способы оплаты</a>
+        <a href="#">клиентам</a>
+        <a href="#">о&nbsp;компании</a>
+        <a href="#">контакты</a>
+      </div>
+      <div class="separator"></div>
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <img src="assets/images/menu-cross.svg">
+            </button>
+            <div class="main-menu__profile">
+              <a href="#">
+                <img src="assets/images/user1.png" alt="Пользователь Дианэт">
+              </a>
+            </div>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <!-- <li class="dropdown"> -->
+              <!--   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Город: Барнаул <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Барнаул</a></li>
+                  <li><a href="#">Бийск</a></li>
+                  <li><a href="#">Заринск</a></li>
+                  <li><a href="#">Рубцовск</a></li>
+                </ul> -->
+              <!-- </li> -->
+              <li><a href="#">Услуги для бизнеса</a></li>
+              <li><a href="#">Услуги для дома</a></li>
+              <li><a href="#">Гос. сектору</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Способы оплаты</a></li>
+              <li><a href="#">Клиентам</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li class="navbar-collapse-call"><a href="#">Заказать звонок</a>
+              <a href="tel:(3852) 567-567">(3852) 567-567</a> </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+
+    <div class="content">
+
+      <h1>заявка на подключение интернета</h1>
+
+      <div class="content__order content__big-wrapper row">
+        <div class="col-sm-12 col-md-8">
+
+          <form action="" class="-visor-no-click live-labels" method="post">
+            <div class="content__order__form row">
+              <div class="col-xs-12 col-sm-12">
+                <h3>Адрес</h3>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <label for="city">город</label>
+                <select name="city" id="city" required>
+                  <!-- <option selected disabled hidden style='display: none' value=''></option> -->
+                  <option value="1">Барнаул</option>
+                  <option value="2">Новоалтайск</option>
+                  <option value="3">Павловск</option>
+                </select>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <label for="street">улица</label>
+                <input type="text" name="street" id="street" required>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <label for="house">№ дома</label>
+                <input type="text" name="house" id="house" required>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <label for="quarter">№ квартиры</label>
+                <input type="text" name="quarter" id="quarter" required>
+              </div>
+
+              <div class="col-xs-12 col-sm-12">
+                <h3 class="content__order__form__h3">Контактные данные</h3>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <label for="name">имя</label>
+                <input type="text" name="name" id="name" required>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <label for="surname">фамилия</label>
+                <input type="text" name="surname" id="surname" required>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <label for="phone">телефон</label>
+                <input type="text" name="phone" id="phone" required>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <label for="email">эл. почта (не обязательно)</label>
+                <input type="text" name="email" id="email">
+              </div>
+
+              <div class="col-xs-12 col-sm-12 content__order__form__submit">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement">Я согласен (а) на обработку персональных данных</label>
+                <button class="orange-button">отправить заявку</button>
+                <span>
+                  Подключим сегодня, если один из мастеров свободен.<br>
+                  Если нет &ndash; в течение 3-х дней.
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-sm-12 col-md-4">
+          <div class="content__order__tariff">
+            <h3>Стоимость пакета<br>&laquo;Городской 35&raquo;</h3>
+            
+            <div class="content__order__tariff__setting">
+              <div>
+                <div><span>Интернет</span></div>
+                <div >600 руб./мес.</div>
+              </div>
+              <p></p>
+            </div>
+            <div class="content__order__tariff__setting">
+              <div>
+                <div><span>Телефон</span></div>
+                <div>500 руб.</div>
+              </div>
+              <p>Единоразовый платёж за подключение телефона</p>
+            </div>
+            <div class="content__order__tariff__setting">
+              <div>
+                <div><span>Авансовый платёж</span></div>
+                <div>500 руб.</div>
+              </div>
+              <p>
+                Потребуется внести авансовый платёж перед подключением.<br>
+                Эти деньги лягут на ваш счёт.
+              </p>
+            </div>
+            <div class="content__order__tariff__total">
+              <div>
+                <div><span>Итого:</span></div>
+                <div>1 100 руб.</div>
+              </div>
+              <p>
+                Эту сумму надо будет заплатить сотруднику при подкючении
+              </p>
+            </div>
+            <div class="content__manager">
+              <div class="content__manager__img">
+                <img src="assets/images/manager.jpg" alt="Менеджер Дианэт">
+              </div>
+              <div class="content__manager__desc">
+                <p>Дарья, менеджер</p>
+                <p>Если у вас есть вопросы &ndash; пишите, отвечу в течение минуты!</p>
+                <span><ul><li>online</li></ul></span>
+                <a href="#" class="orange-button">задать свой вопрос</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="assets/images/logo_white.svg" alt="Интернет-провайдер Дианэт">
+      </div>
+      <p class="footer__copyright">
+        ООО «Дианэт» &copy; 2017 Все права сохранены.<br>
+        Использование материалов сайта<br>
+        без согласования запрещено.
+      </p>
+      <div class="footer__social">
+        мы в:
+        <div class="footer__social__vk">
+          <a href="#">
+            <img src="assets/images/vk.svg">
+            Вконтакте
+          </a>
+        </div>
+      </div>
+      <div class="footer__phone">
+        <a href="#" data-toggle="modal" data-target="#contactModal">
+          заказать&nbsp;звонок
+        </a>
+        <span><a href="tel:(3852) 567-567">(3852) 567-567</a></span>
+      </div>
+      <p class="footer__production">
+        Проектирование и дизайн — &laquo;Чипса&raquo;, 2017
+      </p>
+    </footer>
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="contactModal">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Закрыть&nbsp;&nbsp;&nbsp;&nbsp;<div class="modal-cross">&times;</span></div></button>
+          <h5 class="modal-title">заказать звонок</h5>
+        </div>
+        <form action="" class="-visor-no-click live-labels">
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="name">Имя:</label>
+              <input class="form-control" id="name" type="text" name="name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон:</label>
+              <input class="form-control" id="phone" type="text" name="phone">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="orange-button">Отправить</button>
+          </div>
+        </form>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/lightbox.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/custom-carousel.js"></script>
+  <script src="assets/js/jquery.mask.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>

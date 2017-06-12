@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>&#208;&#146;&#208;&#156;&#208;&#171;&#208;&#171;&#208;&#156;</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-14315 -1108)">
+<g id="&#208;&#146;&#208;&#156;&#208;&#171;&#208;&#171;&#208;&#156;">
+<g id="Rectangle 39">
+<use xlink:href="#path0_fill" transform="translate(14315 1108)" fill="#222328"/>
+</g>
+<g id="i">
+<use xlink:href="#path1_fill" transform="translate(14326 1114)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 12C 0 5.37258 5.37258 0 12 0C 18.6274 0 24 5.37258 24 12C 24 18.6274 18.6274 24 12 24C 5.37258 24 0 18.6274 0 12Z"/>
+<path id="path1_fill" d="M 1 12C 0.447715 12 0 11.5523 0 11L 0 5C 0 4.44772 0.447715 4 1 4C 1.55228 4 2 4.44772 2 5L 2 11C 2 11.5523 1.55228 12 1 12ZM 1 2C 0.447715 2 0 1.55228 0 1C 0 0.447715 0.447715 0 1 0C 1.55228 0 2 0.447715 2 1C 2 1.55228 1.55228 2 1 2Z"/>
+</defs>
+</svg>

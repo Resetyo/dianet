@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Интернет для дома | Дианэт</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/lightbox.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+  <link rel="stylesheet" href="assets/css/custom-carousel.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="main-menu">
+        <div class="logo"><a href="#"><img src="assets/images/logo.svg" alt="Дианэт"></a></div>
+        <div class="main-menu__city">
+          <span>ваш&nbsp;город:</span>
+          <div class="dropdown">
+            <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#">
+              Барнаул
+              <img src="assets/images/dropdown.svg">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Барнаул</a></li>
+              <li><a href="#">Бийск</a></li>
+              <li><a href="#">Заринск</a></li>
+              <li><a href="#">Рубцовск</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-menu__phone">
+          <span>(3852) 567-567</span> 
+          <a href="#" data-toggle="modal" data-target="#contactModal">
+            заказать&nbsp;звонок
+          </a>
+        </div>
+        <div class="main-menu__profile">
+          <a href="#">
+            <img src="assets/images/user1.png" alt="Пользователь Дианэт">
+            <span>Алексей Понамарёв</span>
+          </a>
+        </div>
+      </div>
+      <div class="nav-menu">
+        <a href="#" class="active">услуги для бизнеса</a>
+        <a href="#">услуги для дома</a>
+        <a href="#">госсектору</a>
+        <a href="#">способы оплаты</a>
+        <a href="#">клиентам</a>
+        <a href="#">о&nbsp;компании</a>
+        <a href="#">контакты</a>
+      </div>
+      <div class="separator"></div>
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <img src="assets/images/menu-cross.svg">
+            </button>
+            <div class="main-menu__profile">
+              <a href="#">
+                <img src="assets/images/user1.png" alt="Пользователь Дианэт">
+              </a>
+            </div>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <!-- <li class="dropdown"> -->
+              <!--   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Город: Барнаул <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Барнаул</a></li>
+                  <li><a href="#">Бийск</a></li>
+                  <li><a href="#">Заринск</a></li>
+                  <li><a href="#">Рубцовск</a></li>
+                </ul> -->
+              <!-- </li> -->
+              <li><a href="#">Услуги для бизнеса</a></li>
+              <li><a href="#">Услуги для дома</a></li>
+              <li><a href="#">Гос. сектору</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Способы оплаты</a></li>
+              <li><a href="#">Клиентам</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li class="navbar-collapse-call"><a href="#">Заказать звонок</a>
+              <a href="tel:(3852) 567-567">(3852) 567-567</a> </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+
+    <div class="content">
+
+      <h1>быстрый интернет для дома</h1>
+
+      <div class="content__big-wrapper">
+     
+        <div class="content__address-check">
+          <h2>Проверьте, работает ли &laquo;Дианэт&raquo; по вашему адресу?</h2>
+          <form action="" class="-visor-no-click live-labels" method="post">
+            <div>
+              <label for="city">город</label>
+              <select name="city" id="city" required>
+                <option selected disabled hidden style='display: none' value=''></option>
+                <option value="1">Барнаул</option>
+                <option value="2">Новоалтайск</option>
+                <option value="3">Павловск</option>
+              </select>
+            </div>
+            <div>
+              <label for="street">улица</label>
+              <input type="text" name="street" id="street" required>
+            </div>
+            <div>
+              <label for="house">дом</label>
+              <input type="text" name="house" id="house" required>
+            </div>
+            <button type="submit">проверить адрес</button>
+          </form>
+          <div class="content__address-check__success">
+            <div>
+              <div>
+                <img src="assets/images/address-success.svg">
+              </div>
+            </div>
+            <div>
+              <h2>Хорошие новости! Мы можем вас подключить</h2>
+              <p>
+                Выберите тариф &ndash; и в течение 3-х рабочих дней вы сможете смотреть фильмы,<br>
+                играть и общаться с друзьями по сети
+              </p>
+              <a href="#tariffs" class="orange-button">выбрать тариф</a> <!-- redirect to this page -->
+              <a href="#" class="content__address-check__repeat">
+                <img src="assets/images/repeat.svg">
+                <span>проверить другой адрес</span>
+              </a>
+            </div>
+          </div>
+          <div class="content__address-check__missing">
+            <div>
+              <div>
+                <img src="assets/images/address-missing.svg">
+              </div>
+            </div>
+            <div>
+              <h2>Ваш дом пока не подключен</h2>
+              <p>
+                Для подключения требуется ещё 10 заявок. Оставьте заявку – мы свяжемся, как только
+                ваш дом будет готов. Для ускорения процесса можете порекомендовать нас соседям
+              </p>
+              <a href="#" class="orange-button">оставить заявку на подключение</a>
+              <a href="#" class="content__address-check__repeat"> <!-- redirect to this page -->
+                <img src="assets/images/repeat.svg">
+                <span>проверить другой адрес</span>
+              </a>
+            </div>
+          </div>
+          <div class="content__address-check__shade"></div>
+        </div>
+      </div>
+
+      <div class="content__big-wrapper row">
+
+        <div class="content__light-shadow">
+          <h3>
+            Чтобы выбрать тариф,<br>сначала проверьте адрес
+          </h3>
+        </div>
+        <a name="tariffs"></a>
+        <h3>Тарифы</h3>
+
+        <div class="col-sm-12 col-md-8 content__left-block">
+
+          <div class="content__tariffs">
+
+            <div class="content__tariffs__item">
+              <img class="content__tariffs__item__background" src="assets/images/tariff-city35.jpg">
+              <form action="" method="post">
+                <input type="hidden" name="tariff" value="city-35">
+                <div class="content__tariffs__item__left-side">
+                  <h4>городской 35</h4>
+                  <div>
+                    <div class="content__tariffs__item__speed">
+                      <img src="assets/images/speedometer.svg">
+                      <p>
+                        Скорость интернета днём до 35 Мбит/с, ночью до 100 Мбит/с
+                      </p>
+                    </div>
+                    <div class="content__tariffs__item__tv">
+                      <input type="checkbox" name="tv" id="tv_1" data-price="0" checked>
+                      <label for="tv_1">ТВ &ndash; 200 каналов</label>
+                      <div class="content__tariffs__item__info" data-id='tv'></div>
+                    </div>
+                    <div class="content__tariffs__item__phone">
+                      <input type="checkbox" name="phone" id="phone_1" data-price="200">
+                      <label for="phone_1">Телефон</label>
+                      <div class="content__tariffs__item__info" data-id='phone'></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content__tariffs__item__right-side">
+                  <div>
+                    <h5>просто и доступно</h5>
+                    <div>
+                      <div>
+                        <div class="content__tariffs__item__price">
+                          450
+                        </div>
+                        <div class="content__tariffs__item__price-currency">
+                          рублей<br>в месяц 
+                        </div>
+                      </div>
+                      <button  type="submit" class="orange-button">выбрать</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="content__tariffs__item__description">
+                  <div class="content__tariffs__item__description-tv">
+                    Приятный бонус каждому клиенту &ndash; это бесплатное IP-телевидение.<br> 
+                    Ваш досуг разбавят 204 канала,<br>30 из которых в HD-качестве
+                  </div>
+                  <div class="content__tariffs__item__description-phone">
+                    Приятный бонус каждому клиенту &ndash; это бесплатное IP-телевидение.<br> 
+                    Ваш досуг разбавят 204 канала,<br>30 из которых в HD-качестве
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="content__tariffs__item">
+              <img class="content__tariffs__item__background" src="assets/images/tariff-city60.jpg">
+              <form action="" method="post">
+                <input type="hidden" name="tariff" value="city-60">
+                <div class="content__tariffs__item__left-side">
+                  <h4>городской 60</h4>
+                  <div>
+                    <div class="content__tariffs__item__speed">
+                      <img src="assets/images/speedometer.svg">
+                      <p>
+                        Скорость интернета  днём до 60 Мбит/с, ночью до 100 Мбит/с
+                      </p>
+                    </div>
+                    <div class="content__tariffs__item__tv">
+                      <input type="checkbox" name="tv" id="tv_2" checked data-price="0">
+                      <label for="tv_2">ТВ &ndash; 200 каналов</label>
+                      <div class="content__tariffs__item__info" data-id='tv'></div>
+                    </div>
+                    <div class="content__tariffs__item__phone">
+                      <input type="checkbox" name="phone" id="phone_2" data-price="200">
+                      <label for="phone_2">Телефон</label>
+                      <div class="content__tariffs__item__info" data-id='phone'></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content__tariffs__item__right-side">
+                  <div>
+                    <h5>любителям игр и фильмов</h5>
+                    <div>
+                      <div>
+                        <div class="content__tariffs__item__price">
+                          550 
+                        </div>
+                        <div class="content__tariffs__item__price-currency">
+                          рублей<br>в месяц 
+                        </div>
+                      </div>
+                      <button  type="submit" class="orange-button">выбрать</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="content__tariffs__item__description">
+                  <div class="content__tariffs__item__description-tv">
+                    Приятный бонус каждому клиенту &ndash; это бесплатное IP-телевидение.<br> 
+                    Ваш досуг разбавят 204 канала,<br>30 из которых в HD-качестве
+                  </div>
+                  <div class="content__tariffs__item__description-phone">
+                    Приятный бонус каждому клиенту &ndash; это бесплатное IP-телевидение.<br> 
+                    Ваш досуг разбавят 204 канала,<br>30 из которых в HD-качестве
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="content__tariffs__item">
+              <img class="content__tariffs__item__background" src="assets/images/tariff-city100.jpg">
+              <form action="" method="post">
+                <input type="hidden" name="tariff" value="city-100">
+                <div class="content__tariffs__item__left-side">
+                  <h4>городской 100</h4>
+                  <div>
+                    <div class="content__tariffs__item__speed">
+                      <img src="assets/images/speedometer.svg">
+                      <p>
+                        Скорость интернета 100 Мбит/с
+                      </p>
+                    </div>
+                    <div class="content__tariffs__item__tv">
+                      <input type="checkbox" name="tv" id="tv_3" checked data-price="0">
+                      <label for="tv_3">ТВ &ndash; 200 каналов</label>
+                      <div class="content__tariffs__item__info" data-id='tv'></div>
+                    </div>
+                    <div class="content__tariffs__item__phone">
+                      <input type="checkbox" name="phone" id="phone_3" data-price="200">
+                      <label for="phone_3">Телефон</label>
+                      <div class="content__tariffs__item__info" data-id='phone'></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content__tariffs__item__right-side">
+                  <div>
+                    <h5>для тех, кто хочет всё и сразу</h5>
+                    <div>
+                      <div>
+                        <div class="content__tariffs__item__price">
+                          650 
+                        </div>
+                        <div class="content__tariffs__item__price-currency">
+                          рублей<br>в месяц 
+                        </div>
+                      </div>
+                      <button  type="submit" class="orange-button">выбрать</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="content__tariffs__item__description">
+                  <div class="content__tariffs__item__description-tv">
+                    Приятный бонус каждому клиенту &ndash; это бесплатное IP-телевидение.<br> 
+                    Ваш досуг разбавят 204 канала,<br>30 из которых в HD-качестве
+                  </div>
+                  <div class="content__tariffs__item__description-phone">
+                    Приятный бонус каждому клиенту &ndash; это бесплатное IP-телевидение.<br> 
+                    Ваш досуг разбавят 204 канала,<br>30 из которых в HD-качестве
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="content__tariffs__item">
+              <img class="content__tariffs__item__background" src="assets/images/tariff-mozaika.jpg">
+              <form action="" method="post">
+                <input type="hidden" name="tariff" value="city-100">
+                <div class="content__tariffs__item__left-side">
+                  <h4>мозаика</h4>
+                  <div>
+                    <div class="content__tariffs__item__speed">
+                      <img src="assets/images/speedometer.svg">
+                      <p>
+                        Скорость интернета 100 Мбит/с
+                      </p>
+                    </div>
+                    <div class="content__tariffs__item__tv">
+                      <input type="checkbox" name="tv" id="tv_4" checked data-price="0">
+                      <label for="tv_4">ТВ &ndash; 200 каналов</label>
+                      <div class="content__tariffs__item__info" data-id='tv'></div>
+                    </div>
+                    <div class="content__tariffs__item__phone">
+                      <input type="checkbox" name="phone" id="phone_4" data-price="200">
+                      <label for="phone_4">Телефон</label>
+                      <div class="content__tariffs__item__info" data-id='phone'></div>
+                    </div>
+                    <div class="content__tariffs__item__video">
+                      <input type="checkbox" name="video" id="video_4" data-price="300">
+                      <label for="video_4">Видеонаблюдение</label>
+                      <div class="content__tariffs__item__info" data-id='video'></div>
+                    </div>
+                    <div class="content__tariffs__item__router">
+                      <input type="checkbox" name="router" id="router_4" data-price="400">
+                      <label for="router_4">Роутер и приставка</label>
+                      <div class="content__tariffs__item__info" data-id='router'></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content__tariffs__item__right-side">
+                  <div>
+                    <p>
+                      При расторжении договора
+                      в первые 6 месяцев нужно оплатить базовую стоимость подключения.
+                    </p>
+                    <div>
+                      <div>
+                        <div class="content__tariffs__item__price">
+                          650 
+                        </div>
+                        <div class="content__tariffs__item__price-currency">
+                          рублей<br>в месяц 
+                        </div>
+                      </div>
+                      <button  type="submit" class="orange-button">выбрать</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="content__tariffs__item__description">
+                  <div class="content__tariffs__item__description-tv">
+                    Приятный бонус каждому клиенту &ndash; это бесплатное IP-телевидение.<br> 
+                    Ваш досуг разбавят 204 канала,<br>30 из которых в HD-качестве
+                  </div>
+                  <div class="content__tariffs__item__description-phone">
+                    Приятный бонус каждому клиенту &ndash; это бесплатное IP-телевидение.<br> 
+                    Ваш досуг разбавят 204 канала,<br>30 из которых в HD-качестве
+                  </div>
+                  <div class="content__tariffs__item__description-video">
+                    Приятный бонус каждому клиенту &ndash; это бесплатное IP-телевидение.<br> 
+                    Ваш досуг разбавят 204 канала,<br>30 из которых в HD-качестве
+                  </div>
+                  <div class="content__tariffs__item__description-router">
+                    Приятный бонус каждому клиенту &ndash; это бесплатное IP-телевидение.<br> 
+                    Ваш досуг разбавят 204 канала,<br>30 из которых в HD-качестве
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <h3>С Дианэт всё просто</h3>
+          <div class="content__medium-text-p">
+            <p>
+              Чтобы подключить интернет не нужно никуда ходить и что-то уточнять. Достаточно выбрать тариф и позвонить
+              по номеру (3852) 567-567.  
+            </p>
+            <p>
+              Мы приедем с договором и проведём кабель за одну встречу.
+            </p>
+            <p>   
+              Рекомендуем заказать пакет услуг: интернет в дом, телефонию и например, роутер. Некоторые наши пользователи экономят на пакетных тарифах до 500 рублей в месяц. Мы только за! К тому же один личный счёт на все услуги &ndash; 
+              это удобно. 
+            </p>
+            <p>
+              Приятный бонус каждому клиенту &ndash; это бесплатное IP-телевидение. Ваш досуг разбавят 204 канала, 
+              30 из которых в HD-качестве. 
+            </p>
+            <p>
+              Если у вас есть дети &ndash; сделаем так, что они смогут смотреть только детские каналы. То же самое касается и сайтов: дети не смогут посетить ресурсы для взрослых без вашего ведома. Мы всегда даём чуть больше, чем прописано в договоре.
+            </p>
+            <p>
+              Все каналы можно просматривать с компьютера или телевизора бесплатно. Для второго варианта потребуется роутер
+              и наша фирменная приставка.
+            </p>
+          </div>
+
+          <h3>Важные вопросы по подключению интернета</h3>
+          <div class="content__unfolding">
+
+            <div class="content__unfolding__block">
+              <div class="content__unfolding__item">
+                <div>
+                  <h4>
+                    Что нужно для подключения?
+                  </h4>
+                  <div class="content__unfolding__plus">
+                    <img src="assets/images/plus.svg">
+                  </div>
+                </div>
+                <p>
+                  Компьютер или ноутбук с сетевой картой. В 99% случаях эта карта есть у каждого. Если пользуетесь
+                  только телефоном &ndash; потребуется wifi-роутер. Его можно приобрести у нас  или взять в рассрочку.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 content__right-block">
+          <div class="row">
+            
+            <div class="col-xs-12 col-sm-6 col-md-12">
+              <div class="content__advantages_small">
+                <h4>
+                  преимущества
+                </h4>
+
+                <div class="content__advantages_small__item">
+                  <div>
+                    <span>1</span>
+                  </div>
+                  <p>
+                    Подключим сегодня, если один из мастеров свободен. Если нет &ndash; в течение 3-х дней.
+                  </p>
+                </div>
+
+                <div class="content__advantages_small__item">
+                  <div>
+                    <span>2</span>
+                  </div>
+                  <p>
+                    Настроим компьютер и роутер, а не просто проведём провода. Интернет заработает сразу
+                  </p>
+                </div>
+
+                <div class="content__advantages_small__item">
+                  <div>
+                    <span>3</span>
+                  </div>
+                  <p>
+                    Обеспечим круглосуточную техподдержку по телефону и в чате.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-12">
+              <div class="content__manager">
+                <div class="content__manager__img">
+                  <img src="assets/images/manager.jpg" alt="Менеджер Дианэт">
+                </div>
+                <div class="content__manager__desc">
+                  <p>Дарья, менеджер</p>
+                  <p>Если у вас есть вопросы &ndash; пишите, отвечу в течение минуты!</p>
+                  <span><ul><li>online</li></ul></span>
+                  <a href="#" class="orange-button">задать свой вопрос</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="assets/images/logo_white.svg" alt="Интернет-провайдер Дианэт">
+      </div>
+      <p class="footer__copyright">
+        ООО «Дианэт» &copy; 2017 Все права сохранены.<br>
+        Использование материалов сайта<br>
+        без согласования запрещено.
+      </p>
+      <div class="footer__social">
+        мы в:
+        <div class="footer__social__vk">
+          <a href="#">
+            <img src="assets/images/vk.svg">
+            Вконтакте
+          </a>
+        </div>
+      </div>
+      <div class="footer__phone">
+        <a href="#" data-toggle="modal" data-target="#contactModal">
+          заказать&nbsp;звонок
+        </a>
+        <span><a href="tel:(3852) 567-567">(3852) 567-567</a></span>
+      </div>
+      <p class="footer__production">
+        Проектирование и дизайн — &laquo;Чипса&raquo;, 2017
+      </p>
+    </footer>
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="contactModal">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Закрыть&nbsp;&nbsp;&nbsp;&nbsp;<div class="modal-cross">&times;</span></div></button>
+          <h5 class="modal-title">заказать звонок</h5>
+        </div>
+        <form action="" class="-visor-no-click live-labels">
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="name">Имя:</label>
+              <input class="form-control" id="name" type="text" name="name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон:</label>
+              <input class="form-control" id="phone" type="text" name="phone">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="orange-button">Отправить</button>
+          </div>
+        </form>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/lightbox.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/custom-carousel.js"></script>
+  <script src="assets/js/jquery.mask.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>

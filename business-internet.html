@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Интернет для организации | Дианэт</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/lightbox.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+  <link rel="stylesheet" href="assets/css/custom-carousel.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="main-menu">
+        <div class="logo"><a href="#"><img src="assets/images/logo.svg" alt="Дианэт"></a></div>
+        <div class="main-menu__city">
+          <span>ваш&nbsp;город:</span>
+          <div class="dropdown">
+            <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#">
+              Барнаул
+              <img src="assets/images/dropdown.svg">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Барнаул</a></li>
+              <li><a href="#">Бийск</a></li>
+              <li><a href="#">Заринск</a></li>
+              <li><a href="#">Рубцовск</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-menu__phone">
+          <span>(3852) 567-567</span> 
+          <a href="#" data-toggle="modal" data-target="#contactModal">
+            заказать&nbsp;звонок
+          </a>
+        </div>
+        <div class="main-menu__profile main-menu__signin">
+          <a href="#">
+            <img src="assets/images/sign-in-icon.svg" alt="Пользователь Дианэт">
+            <span>войти в кабинет</span>
+          </a>
+        </div>
+      </div>
+      <div class="nav-menu">
+        <a href="#" class="active">услуги для бизнеса</a>
+        <a href="#">услуги для дома</a>
+        <a href="#">госсектору</a>
+        <a href="#">способы оплаты</a>
+        <a href="#">клиентам</a>
+        <a href="#">о&nbsp;компании</a>
+        <a href="#">контакты</a>
+      </div>
+      <div class="separator"></div>
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <img src="assets/images/menu-cross.svg">
+            </button>
+            <div class="main-menu__profile main-menu__signin">
+              <a href="#">
+                <img src="assets/images/sign-in-icon.svg" alt="Пользователь Дианэт">
+              </a>
+            </div>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <!-- <li class="dropdown"> -->
+              <!--   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Город: Барнаул <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Барнаул</a></li>
+                  <li><a href="#">Бийск</a></li>
+                  <li><a href="#">Заринск</a></li>
+                  <li><a href="#">Рубцовск</a></li>
+                </ul> -->
+              <!-- </li> -->
+              <li><a href="#">Услуги для бизнеса</a></li>
+              <li><a href="#">Услуги для дома</a></li>
+              <li><a href="#">Гос. сектору</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Способы оплаты</a></li>
+              <li><a href="#">Клиентам</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li class="navbar-collapse-call"><a href="#">Заказать звонок</a>
+              <a href="tel:(3852) 567-567">(3852) 567-567</a> </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+
+    <div class="content">
+
+      <h1>Интернет для организации</h1>
+
+      <div class="content__big-wrapper">
+     
+        <div class="content__address-check">
+          <h2>Проверьте, работает ли &laquo;Дианэт&raquo; по вашему адресу?</h2>
+          <form action="" class="-visor-no-click live-labels" method="post">
+            <div>
+              <label for="city">город</label>
+              <select name="city" id="city" required>
+                <option selected disabled hidden style='display: none' value=''></option>
+                <option value="1">Барнаул</option>
+                <option value="2">Новоалтайск</option>
+                <option value="3">Павловск</option>
+              </select>
+            </div>
+            <div>
+              <label for="street">улица</label>
+              <input type="text" name="street" id="street" required>
+            </div>
+            <div>
+              <label for="house">дом</label>
+              <input type="text" name="house" id="house" required>
+            </div>
+            <button type="submit">проверить адрес</button>
+          </form>
+          <div class="content__address-check__success">
+            <div>
+              <div>
+                <img src="assets/images/address-success.svg">
+              </div>
+            </div>
+            <div>
+              <h2>Хорошие новости! Мы можем вас подключить</h2>
+              <p>
+                Выберите тариф &ndash; и в течение 3-х рабочих дней вы сможете смотреть фильмы,<br>
+                играть и общаться с друзьями по сети
+              </p>
+              <a href="#tariffs" class="orange-button">выбрать тариф</a> <!-- redirect to this page -->
+              <a href="#" class="content__address-check__repeat">
+                <img src="assets/images/repeat.svg">
+                <span>проверить другой адрес</span>
+              </a>
+            </div>
+          </div>
+          <div class="content__address-check__missing">
+            <div>
+              <div>
+                <img src="assets/images/address-missing.svg">
+              </div>
+            </div>
+            <div>
+              <h2>Ваш дом пока не подключен</h2>
+              <p>
+                Для подключения требуется ещё 10 заявок. Оставьте заявку – мы свяжемся, как только
+                ваш дом будет готов. Для ускорения процесса можете порекомендовать нас соседям
+              </p>
+              <a href="#" class="orange-button">оставить заявку на подключение</a>
+              <a href="#" class="content__address-check__repeat"> <!-- redirect to this page -->
+                <img src="assets/images/repeat.svg">
+                <span>проверить другой адрес</span>
+              </a>
+            </div>
+          </div>
+          <div class="content__address-check__shade"></div>
+        </div>
+      </div>
+
+      <div class="content__big-wrapper row">
+
+        <div class="content__light-shadow">
+          <h3>
+            Чтобы выбрать тариф,<br>сначала проверьте адрес
+          </h3>
+        </div>
+
+        <div class="col-sm-12 col-md-8 content__left-block">
+        
+          <h3>Бесперебойный интернет,<br>который помогает бизнесу расти</h3>
+
+          <div class="content__medium-text-p">
+
+            <div class="content__medium-text-p__dash">
+              <p>
+                Стабильность современного бизнеса зависит от бесперебойности и качества интернета. Мы довольны своей работой только тогда, когда бизнес наших клиентов работает без простоев.
+              </p>
+            </div>
+
+            <div class="content__medium-text-p__dash">
+              <p>
+                &laquo;Дианэт&raquo; дарит спокойствие руководителю. Когда телефония, корпоративная сеть и интернет в организации работают стабильно &ndash; сотрудники успевают больше.
+              </p>
+            </div>
+
+            <div class="content__medium-text-p__dash">
+              <p>
+                У нас нет готовых тарифов. Мы учитываем число ваших сотрудников и задачи организации, и подбирает индивидуальные условия. Переплаты исключены.
+              </p>
+            </div>
+          </div>
+
+          <h3>С нами надёжно</h3>
+
+          <div class="content__advantages_medium">
+            <div class="row">
+              <div class="col-xs-6 col-sm-4">
+                <div class="content__advantages_small__item">
+                  <div>
+                    <span>1</span>
+                  </div>
+                  <h5>скорость</h5>
+                  <p>
+                    Скорость доступа &ndash; до 100 Мбит/сек
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-xs-6 col-sm-4">
+                <div class="content__advantages_small__item">
+                  <div>
+                    <span>2</span>
+                  </div>
+                  <h5>Техподдержка 24/7</h5>
+                  <p>
+                    Круглосуточная техническая поддержка
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-xs-6 col-sm-4">
+                <div class="content__advantages_small__item">
+                  <div>
+                    <span>3</span>
+                  </div>
+                  <h5>Защита информации</h5>
+                  <p>
+                    Информация шифруется &ndash; доступ со стороны исключён
+
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-xs-6 col-sm-4">
+                <div class="content__advantages_small__item">
+                  <div>
+                    <span>4</span>
+                  </div>
+                  <h5>Корпоративная сеть</h5>
+                  <p>
+                    Корпоративная сеть: экономит ваши деньги и время сотрудников
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-xs-6 col-sm-4">
+                <div class="content__advantages_small__item">
+                  <div>
+                    <span>5</span>
+                  </div>
+                  <h5>Возврат денег</h5>
+                  <p>
+                    Возвращаем деньги, если интернет перестаёт работать хотя бы один день
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content__reviews">
+
+            <h3>Отзывы о нас</h3>
+
+            <div class="reviews-carousel">
+              <div class="custom-carousel__items">
+                <div class="item">
+                  <img src="assets/images/trust.png">
+                  <div class="carousel-divider"></div>
+                  <div class="carousel-text">
+                    <h4>Анна Самохвалова</h4>
+                    <p class="reviews-subheader">
+                      Владелец кадрового агентства г. Барнаул
+                    </p>
+                    <p class="reviews-text">
+                      Ребята быстро приехали и подключили наши 7 компьютеров в небольшую корпоративную сеть. Нам сразу стало легче передавать и находить файлы и скорость работы сотрудников возросла в разы. Сейчас занимаемся созданием внутреннего архива файлов чтобы находить их было просто даже вновь прибывшему сотруднику.
+                    </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="assets/images/trust.png">
+                  <div class="carousel-divider"></div>
+                  <div class="carousel-text">
+                    <h4>Валерия Самохвалова</h4>
+                    <p class="reviews-subheader">
+                      Владелец кадрового агентства г. Барнаул
+                    </p>
+                    <p class="reviews-text">
+                      Ребята быстро приехали и подключили наши 7 компьютеров в небольшую корпоративную сеть. Нам сразу стало легче передавать и находить файлы и скорость работы сотрудников возросла в разы. Сейчас занимаемся созданием внутреннего архива файлов чтобы находить их было просто даже вновь прибывшему сотруднику.
+                    </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="assets/images/trust.png">
+                  <div class="carousel-divider"></div>
+                  <div class="carousel-text">
+                    <h4>Екатерина Самохвалова</h4>
+                    <p class="reviews-subheader">
+                      Владелец кадрового агентства г. Барнаул
+                    </p>
+                    <p class="reviews-text">
+                      Ребята быстро приехали и подключили наши 7 компьютеров в небольшую корпоративную сеть. Нам сразу стало легче передавать и находить файлы и скорость работы сотрудников возросла в разы. Сейчас занимаемся созданием внутреннего архива файлов чтобы находить их было просто даже вновь прибывшему сотруднику.
+                    </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="assets/images/trust.png">
+                  <div class="carousel-divider"></div>
+                  <div class="carousel-text">
+                    <h4>Екатерина Самохвалова</h4>
+                    <p class="reviews-subheader">
+                      Владелец кадрового агентства г. Барнаул
+                    </p>
+                    <p class="reviews-text">
+                      Ребята быстро приехали и подключили наши 7 компьютеров в небольшую корпоративную сеть. Нам сразу стало легче передавать и находить файлы и скорость работы сотрудников возросла в разы. Сейчас занимаемся созданием внутреннего архива файлов чтобы находить их было просто даже вновь прибывшему сотруднику.
+                    </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="assets/images/trust.png">
+                  <div class="carousel-divider"></div>
+                  <div class="carousel-text">
+                    <h4>Екатерина Самохвалова</h4>
+                    <p class="reviews-subheader">
+                      Владелец кадрового агентства г. Барнаул
+                    </p>
+                    <p class="reviews-text">
+                      Ребята быстро приехали и подключили наши 7 компьютеров в небольшую корпоративную сеть. Нам сразу стало легче передавать и находить файлы и скорость работы сотрудников возросла в разы. Сейчас занимаемся созданием внутреннего архива файлов чтобы находить их было просто даже вновь прибывшему сотруднику.
+                    </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="assets/images/trust.png">
+                  <div class="carousel-divider"></div>
+                  <div class="carousel-text">
+                    <h4>Екатерина Самохвалова</h4>
+                    <p class="reviews-subheader">
+                      Владелец кадрового агентства г. Барнаул
+                    </p>
+                    <p class="reviews-text">
+                      Ребята быстро приехали и подключили наши 7 компьютеров в небольшую корпоративную сеть. Нам сразу стало легче передавать и находить файлы и скорость работы сотрудников возросла в разы. Сейчас занимаемся созданием внутреннего архива файлов чтобы находить их было просто даже вновь прибывшему сотруднику.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="custom-carousel__controls">
+                  <img src="assets/images/arrow_u.svg" class="up" alt="up">
+                  <img src="assets/images/arrow_d.svg" class="down" alt="down">
+              </div>
+            </div>
+
+            <div class="mobile-reviews-carousel owl-carousel owl-theme">
+              <div class="item">
+                <img src="assets/images/trust.png">
+                <div class="carousel-divider"></div>
+                <div class="carousel-text">
+                  <h4>Анна Самохвалова</h4>
+                  <p class="reviews-subheader">
+                    Владелец кадрового агентства г. Барнаул
+                  </p>
+                  <p class="reviews-text">
+                    Ребята быстро приехали и подключили наши 7 компьютеров в небольшую корпоративную сеть. Нам сразу стало легче передавать и находить файлы и скорость работы сотрудников возросла в разы. Сейчас занимаемся созданием внутреннего архива файлов чтобы находить их было просто даже вновь прибывшему сотруднику.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/images/trust.png">
+                <div class="carousel-divider"></div>
+                <div class="carousel-text">
+                  <h4>Валерия Самохвалова</h4>
+                  <p class="reviews-subheader">
+                    Владелец кадрового агентства г. Барнаул
+                  </p>
+                  <p class="reviews-text">
+                    Ребята быстро приехали и подключили наши 7 компьютеров в небольшую корпоративную сеть. Нам сразу стало легче передавать и находить файлы и скорость работы сотрудников возросла в разы. Сейчас занимаемся созданием внутреннего архива файлов чтобы находить их было просто даже вновь прибывшему сотруднику.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/images/trust.png">
+                <div class="carousel-divider"></div>
+                <div class="carousel-text">
+                  <h4>Екатерина Самохвалова</h4>
+                  <p class="reviews-subheader">
+                    Владелец кадрового агентства г. Барнаул
+                  </p>
+                  <p class="reviews-text">
+                    Ребята быстро приехали и подключили наши 7 компьютеров в небольшую корпоративную сеть. Нам сразу стало легче передавать и находить файлы и скорость работы сотрудников возросла в разы. Сейчас занимаемся созданием внутреннего архива файлов чтобы находить их было просто даже вновь прибывшему сотруднику.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/images/trust.png">
+                <div class="carousel-divider"></div>
+                <div class="carousel-text">
+                  <h4>Екатерина Самохвалова</h4>
+                  <p class="reviews-subheader">
+                    Владелец кадрового агентства г. Барнаул
+                  </p>
+                  <p class="reviews-text">
+                    Ребята быстро приехали и подключили наши 7 компьютеров в небольшую корпоративную сеть. Нам сразу стало легче передавать и находить файлы и скорость работы сотрудников возросла в разы. Сейчас занимаемся созданием внутреннего архива файлов чтобы находить их было просто даже вновь прибывшему сотруднику.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/images/trust.png">
+                <div class="carousel-divider"></div>
+                <div class="carousel-text">
+                  <h4>Екатерина Самохвалова</h4>
+                  <p class="reviews-subheader">
+                    Владелец кадрового агентства г. Барнаул
+                  </p>
+                  <p class="reviews-text">
+                    Ребята быстро приехали и подключили наши 7 компьютеров в небольшую корпоративную сеть. Нам сразу стало легче передавать и находить файлы и скорость работы сотрудников возросла в разы. Сейчас занимаемся созданием внутреннего архива файлов чтобы находить их было просто даже вновь прибывшему сотруднику.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/images/trust.png">
+                <div class="carousel-divider"></div>
+                <div class="carousel-text">
+                  <h4>Екатерина Самохвалова</h4>
+                  <p class="reviews-subheader">
+                    Владелец кадрового агентства г. Барнаул
+                  </p>
+                  <p class="reviews-text">
+                    Ребята быстро приехали и подключили наши 7 компьютеров в небольшую корпоративную сеть. Нам сразу стало легче передавать и находить файлы и скорость работы сотрудников возросла в разы. Сейчас занимаемся созданием внутреннего архива файлов чтобы находить их было просто даже вновь прибывшему сотруднику.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content__reviews__action">
+              <p>
+                Уже пользуетесь нашими услугами? Напишите пару слов о своих впечатлениях. Мы рады справедливой критике и благодарности.
+              </p>
+              <a class="content__reviews__send" href="#">оставить отзыв</a>
+              <a class="content__reviews__list" href="#">читать все отзывы</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-sm-12 col-md-4 content__right-block">
+          <div class="row">
+            
+            <div class="col-xs-12 col-sm-6 col-md-12">
+              <div class="content__cctv_request">
+                <div class="content__cctv_request__field">
+                  <h5>
+                    Оставьте заявку и видеонаблюдение появится у вас в течении 3-х дней
+                  </h5>
+                  <a href="#" class="orange-button">оставить заявку</a><br>
+                  <a href="tel:(3852) 567-567">Или перезвоните: +7 (3852) 567-567</a>
+                </div>
+                <div class="content__cctv_request__separator"></div>
+                <div class="content__manager">
+                  <div class="content__manager__img">
+                    <img src="assets/images/manager.jpg" alt="Менеджер Дианэт">
+                  </div>
+                  <div class="content__manager__desc">
+                    <p>Дарья, менеджер</p>
+                    <p>Если у вас есть вопросы &ndash; пишите, отвечу в течение минуты!</p>
+                    <span><ul><li>online</li></ul></span>
+                    <a href="#" class="orange-button">задать свой вопрос</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="assets/images/logo_white.svg" alt="Интернет-провайдер Дианэт">
+      </div>
+      <p class="footer__copyright">
+        ООО «Дианэт» &copy; 2017 Все права сохранены.<br>
+        Использование материалов сайта<br>
+        без согласования запрещено.
+      </p>
+      <div class="footer__social">
+        мы в:
+        <div class="footer__social__vk">
+          <a href="#">
+            <img src="assets/images/vk.svg">
+            Вконтакте
+          </a>
+        </div>
+      </div>
+      <div class="footer__phone">
+        <a href="#" data-toggle="modal" data-target="#contactModal">
+          заказать&nbsp;звонок
+        </a>
+        <span><a href="tel:(3852) 567-567">(3852) 567-567</a></span>
+      </div>
+      <p class="footer__production">
+        Проектирование и дизайн — &laquo;Чипса&raquo;, 2017
+      </p>
+    </footer>
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="contactModal">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Закрыть&nbsp;&nbsp;&nbsp;&nbsp;<div class="modal-cross">&times;</span></div></button>
+          <h5 class="modal-title">заказать звонок</h5>
+        </div>
+        <form action="" class="-visor-no-click live-labels">
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="name">Имя:</label>
+              <input class="form-control" id="name" type="text" name="name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон:</label>
+              <input class="form-control" id="phone" type="text" name="phone">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="orange-button">Отправить</button>
+          </div>
+        </form>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/lightbox.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/custom-carousel.js"></script>
+  <script src="assets/js/jquery.mask.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
