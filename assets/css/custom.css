@@ -372,6 +372,9 @@ select:-webkit-autofill:focus {
       line-height: 1.25em; }
   .content__table {
     margin: 0 0 4vw 30px; }
+    .content__table hr {
+      width: 94%;
+      border-bottom: 1px solid #eee; }
     .content__table .nav-tabs {
       border: none;
       padding: 0 15px; }
@@ -390,11 +393,7 @@ select:-webkit-autofill:focus {
             color: #f99531; }
     .content__table .panel {
       border: none;
-      background: none;
-      padding-top: 20px; }
-      .content__table .panel-group {
-        border: solid 2px #eff0f4;
-        border-radius: 15px; }
+      background: none; }
       .content__table .panel-title {
         padding: 20px 20px 20px 30px; }
         .content__table .panel-title > a {
@@ -404,6 +403,23 @@ select:-webkit-autofill:focus {
       .content__table .panel-body {
         padding: 0 25px;
         border-top: none !important; }
+    .content__table .tab-content {
+      border: solid 2px #eff0f4;
+      border-radius: 15px; }
+    .content__table .tab-pane {
+      padding-top: 1vw; }
+      .content__table .tab-pane > h5 {
+        margin: 3vw 2vw;
+        font-size: 1em;
+        line-height: 1.2em; }
+      .content__table .tab-pane > ul {
+        list-style-type: none;
+        padding: 0;
+        margin-left: 6vw; }
+        .content__table .tab-pane > ul li {
+          margin-bottom: 2vw; }
+      .content__table .tab-pane > p {
+        margin: 2vw; }
     .content__table table > tbody > tr:nth-child(2) {
       height: 61px; }
     .content__table table > tbody > tr > td {
@@ -820,6 +836,7 @@ select:-webkit-autofill:focus {
     margin-bottom: 30px; }
   .content__advantages_medium h5 {
     font-size: 1em;
+    line-height: 1.5em;
     margin: 0 0 0.5vw 1vw; }
   .content__advantages_medium p {
     margin-left: 1vw;

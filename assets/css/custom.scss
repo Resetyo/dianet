@@ -486,6 +486,10 @@ select:-webkit-autofill:focus {
 
   &__table {
     margin: 0 0 4vw 30px;
+    hr {
+      width: 94%;
+      border-bottom: 1px solid #eee;
+    }
     .nav-tabs {
       border: none;
       padding: 0 15px;
@@ -511,11 +515,6 @@ select:-webkit-autofill:focus {
     .panel {
       border: none;
       background: none;
-      padding-top: 20px;
-      &-group {
-        border: solid 2px $grayBackground;
-        border-radius: 15px;
-      }
       &-title {
         padding: 20px 20px 20px 30px;
         & > a {
@@ -528,6 +527,29 @@ select:-webkit-autofill:focus {
       &-body {
         padding: 0 25px;
         border-top: none !important;
+      }
+    }
+    .tab-content {
+      border: solid 2px $grayBackground;
+      border-radius: 15px;
+    }
+    .tab-pane  {
+      padding-top: 1vw;
+      & > h5 {
+        margin: 3vw 2vw;
+        font-size: 1em;
+        line-height: 1.2em;
+      }
+      & > ul {
+        list-style-type: none;
+        padding: 0;
+        margin-left: 6vw;
+        li {
+          margin-bottom: 2vw;
+        }
+      }
+      & > p {
+        margin: 2vw;
       }
     }
 
@@ -977,6 +999,7 @@ select:-webkit-autofill:focus {
     }
     h5 {
       font-size: 1em;
+      line-height: 1.5em;
       margin: 0 0 0.5vw 1vw;
     }
     p {
