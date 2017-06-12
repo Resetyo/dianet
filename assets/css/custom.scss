@@ -485,7 +485,7 @@ select:-webkit-autofill:focus {
   }
 
   &__table {
-    margin-bottom: 4vw;
+    margin: 0 0 4vw 30px;
     .nav-tabs {
       border: none;
       padding: 0 15px;
@@ -535,21 +535,27 @@ select:-webkit-autofill:focus {
       &:nth-child(2) {
         height: 61px;
       }
-      & > th {
-        color: $grayLight;
-        font-family: 'Raleway', sans-serif;
-        border: none;
-        border-bottom: 1px solid $grayLight;
-      }
       & > td {
-        border: none;
-        vertical-align: bottom;
-        padding: 9px;
         &:nth-child(2) {
           width: 20%;
         }
         &:nth-child(3) {
           width: 20%;
+        }
+        border: none;
+        vertical-align: bottom;
+        padding: 9px;
+      }
+      & > th {
+        color: $grayLight;
+        font-family: 'Raleway', sans-serif;
+        border: none;
+        border-bottom: 1px solid $grayLight;
+        &.two-columns {
+          width: 33%;
+        }
+        &.three-columns {
+          width: 33%;
         }
       }
     }
