@@ -485,6 +485,7 @@ select:-webkit-autofill:focus {
   }
 
   &__table {
+    margin-bottom: 4vw;
     .nav-tabs {
       border: none;
       padding: 0 15px;
@@ -526,6 +527,7 @@ select:-webkit-autofill:focus {
       }
       &-body {
         padding: 0 25px;
+        border-top: none !important;
       }
     }
 
