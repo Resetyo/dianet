@@ -833,6 +833,7 @@ select:-webkit-autofill:focus {
         display: inline-block;
         width: 70%; }
   .content__advantages_medium {
+    margin-bottom: 4vw;
     padding-left: 1vw; }
     .content__advantages_medium > div > div {
       margin-bottom: 30px; }
@@ -849,6 +850,17 @@ select:-webkit-autofill:focus {
       letter-spacing: -1px !important; }
     .content__advantages_medium .content__advantages_small__item > div {
       margin-bottom: 2vw; }
+    .content__advantages_medium__image {
+      height: 11vw;
+      padding: 0 3vw;
+      overflow: hidden;
+      display: flex !important;
+      width: 100% !important;
+      margin: 0; }
+      .content__advantages_medium__image img {
+        margin: auto; }
+      .content__advantages_medium__image + h5 {
+        text-align: center; }
   .content__manager {
     background-color: #222328;
     border-radius: 15px;
@@ -1267,59 +1279,61 @@ select:-webkit-autofill:focus {
           color: #4f5362;
           width: 80%;
           line-height: 1.7em; }
-  .content__reviews .custom-carousel .item img {
-    display: inline-block;
-    width: auto;
-    height: auto;
-    vertical-align: top;
-    padding-top: 4vw; }
-  .content__reviews .custom-carousel .item .carousel-text {
-    margin-top: 0; }
-    .content__reviews .custom-carousel .item .carousel-text h4 {
-      margin-top: 0;
-      letter-spacing: 1px;
+  .content__reviews {
+    margin-bottom: 4vw; }
+    .content__reviews .custom-carousel .item img {
+      display: inline-block;
+      width: auto;
+      height: auto;
+      vertical-align: top;
+      padding-top: 4vw; }
+    .content__reviews .custom-carousel .item .carousel-text {
+      margin-top: 0; }
+      .content__reviews .custom-carousel .item .carousel-text h4 {
+        margin-top: 0;
+        letter-spacing: 1px;
+        font-size: 1em; }
+    .content__reviews .custom-carousel .item .reviews-subheader {
+      color: #b8b7bc;
+      margin-bottom: 15px;
+      font-size: 0.85em;
+      line-height: 1.8em; }
+    .content__reviews .custom-carousel .item .reviews-text {
+      letter-spacing: -0.6px;
+      color: #6B6E77;
+      line-height: 1.8em; }
+    .content__reviews__action {
+      overflow: hidden;
+      padding-top: 40px;
+      width: 100%; }
+      .content__reviews__action p {
+        margin-left: 30px;
+        font-size: 0.8em;
+        line-height: 1.9em;
+        width: 50%;
+        display: inline-block; }
+    .content__reviews__send, .content__reviews__list {
+      margin-left: 10px;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 5px;
+      font: bold 0.8em/1em 'Raleway', sans-serif;
+      border-radius: 30px;
+      transition: background 0.2s ease;
       font-size: 1em; }
-  .content__reviews .custom-carousel .item .reviews-subheader {
-    color: #b8b7bc;
-    margin-bottom: 15px;
-    font-size: 0.85em;
-    line-height: 1.8em; }
-  .content__reviews .custom-carousel .item .reviews-text {
-    letter-spacing: -0.6px;
-    color: #6B6E77;
-    line-height: 1.8em; }
-  .content__reviews__action {
-    overflow: hidden;
-    padding-top: 40px;
-    width: 100%; }
-    .content__reviews__action p {
-      margin-left: 30px;
-      font-size: 0.8em;
-      line-height: 1.9em;
-      width: 50%;
-      display: inline-block; }
-  .content__reviews__send, .content__reviews__list {
-    margin-left: 10px;
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 5px;
-    font: bold 0.8em/1em 'Raleway', sans-serif;
-    border-radius: 30px;
-    transition: background 0.2s ease;
-    font-size: 1em; }
-  .content__reviews__send, .content__reviews__list:hover, .content__reviews__list:focus {
-    background-color: #000;
-    color: #fff;
-    padding: 12px 15px;
-    border: 0; }
-  .content__reviews__list, .content__reviews__send:hover, .content__reviews__send:focus {
-    background-color: #fff;
-    color: #b8b7bc;
-    padding: 11px 14px;
-    border: 1px solid #b8b7bc; }
-  .content__reviews__list:focus, .content__reviews__send:focus {
-    padding-top: 13px;
-    padding-bottom: 9px; }
+    .content__reviews__send, .content__reviews__list:hover, .content__reviews__list:focus {
+      background-color: #000;
+      color: #fff;
+      padding: 12px 15px;
+      border: 0; }
+    .content__reviews__list, .content__reviews__send:hover, .content__reviews__send:focus {
+      background-color: #fff;
+      color: #b8b7bc;
+      padding: 11px 14px;
+      border: 1px solid #b8b7bc; }
+    .content__reviews__list:focus, .content__reviews__send:focus {
+      padding-top: 13px;
+      padding-bottom: 9px; }
   .content__unfolding h4 {
     display: inline-block;
     width: 80%; }
@@ -1499,6 +1513,8 @@ select:-webkit-autofill:focus {
       background: url("../images/c5.jpg") no-repeat center 80%/150%; }
     .content__banner-trio-hosting:before {
       background: url("../images/chassis.jpg") no-repeat center center/cover; }
+    .content__banner-trio-gossector:before {
+      background: url("../images/flag.jpg") no-repeat center center/cover; }
   .content__light-shadow {
     z-index: 4;
     display: flex;
@@ -1655,6 +1671,10 @@ select:-webkit-autofill:focus {
         .content .custom-carousel .item .carousel-divider {
           margin-top: 45px;
           height: 75px; }
+    .content__table {
+      margin: 0 10px 4vw; }
+      .content__table .nav-tabs > li > a {
+        padding: 10px; }
     .content__wrapper {
       width: auto; }
     .content__big-wrapper.row {
@@ -1856,6 +1876,8 @@ select:-webkit-autofill:focus {
         margin-bottom: 10px; }
     .content__banner-trio {
       margin: 0 10px; }
+      .content__banner-trio a {
+        top: 15px; }
     .content__tariffs {
       padding: 0 10px; }
       .content__tariffs__item {

@@ -994,8 +994,9 @@ select:-webkit-autofill:focus {
   }
 
   &__advantages_medium {
+    margin-bottom: 4vw;
     padding-left: 1vw;
-    & >div > div {
+    & > div > div {
       margin-bottom: 30px;
     }
     h5 {
@@ -1014,6 +1015,20 @@ select:-webkit-autofill:focus {
     }
     .content__advantages_small__item > div {
       margin-bottom: 2vw;
+    }
+    &__image {
+      height: 11vw;
+      padding: 0 3vw;
+      overflow: hidden;
+      display: flex !important;
+      width: 100% !important;
+      margin: 0;
+      img {
+        margin: auto;
+      }
+      & + h5 {
+        text-align: center;
+      }
     }
   }
 
@@ -1551,6 +1566,7 @@ select:-webkit-autofill:focus {
   }
 
   &__reviews {
+    margin-bottom: 4vw;
     .custom-carousel {
       .item {
         img {
@@ -1846,11 +1862,11 @@ select:-webkit-autofill:focus {
     &:before {
       background: url('../images/c5.jpg') no-repeat center 80% / 150%;
     }
-    &-hosting {
-
-      &:before {
-        background: url('../images/chassis.jpg') no-repeat center center / cover;
-      }
+    &-hosting:before {
+      background: url('../images/chassis.jpg') no-repeat center center / cover;
+    }
+    &-gossector:before {
+      background: url('../images/flag.jpg') no-repeat center center / cover;
     }
   }
 
@@ -2064,6 +2080,13 @@ select:-webkit-autofill:focus {
           margin-top: 45px;
           height: 75px;
         }
+      }
+    }
+
+    &__table {
+      margin: 0 10px 4vw;
+      .nav-tabs > li > a {
+        padding: 10px;
       }
     }
 
@@ -2356,6 +2379,9 @@ select:-webkit-autofill:focus {
 
     &__banner-trio {
       margin: 0 10px;
+      a {
+        top: 15px;
+      }
     }
 
     &__tariffs {
