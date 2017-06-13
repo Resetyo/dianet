@@ -558,12 +558,6 @@ select:-webkit-autofill:focus {
         height: 61px;
       }
       & > td {
-        &:nth-child(2) {
-          width: 20%;
-        }
-        &:nth-child(3) {
-          width: 20%;
-        }
         border: none;
         vertical-align: bottom;
         padding: 9px;
@@ -573,16 +567,14 @@ select:-webkit-autofill:focus {
         font-family: 'Raleway', sans-serif;
         border: none;
         border-bottom: 1px solid $grayLight;
-        &.two-columns {
-          width: 33%;
-        }
-        &.three-columns {
-          width: 33%;
+        &.small-column {
+          width: 20%;
         }
       }
     }
     .table {
       margin-bottom: 35px;
+      table-layout: fixed;
     }
   }
 
@@ -833,6 +825,15 @@ select:-webkit-autofill:focus {
     line-height: 1.1em;
     ul {
       line-height: 2em;
+    }
+    ol {
+      h3 {
+        margin: 0 0 1vw;
+
+      }
+      p {
+        margin-bottom: 2vw;
+      }
     }
     p {
       margin-bottom: 1.6vw;
@@ -1871,7 +1872,7 @@ select:-webkit-autofill:focus {
   }
 
   &__light-shadow {
-    z-index: 4;
+    z-index: 6;
     display: flex;
     background-color: #fff;
     opacity: 0.95;

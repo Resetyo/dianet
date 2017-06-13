@@ -426,21 +426,16 @@ select:-webkit-autofill:focus {
       border: none;
       vertical-align: bottom;
       padding: 9px; }
-      .content__table table > tbody > tr > td:nth-child(2) {
-        width: 20%; }
-      .content__table table > tbody > tr > td:nth-child(3) {
-        width: 20%; }
     .content__table table > tbody > tr > th {
       color: #b8b7bc;
       font-family: 'Raleway', sans-serif;
       border: none;
       border-bottom: 1px solid #b8b7bc; }
-      .content__table table > tbody > tr > th.two-columns {
-        width: 33%; }
-      .content__table table > tbody > tr > th.three-columns {
-        width: 33%; }
+      .content__table table > tbody > tr > th.small-column {
+        width: 20%; }
     .content__table .table {
-      margin-bottom: 35px; }
+      margin-bottom: 35px;
+      table-layout: fixed; }
   .content__wrapper {
     width: 62%;
     margin: 0 auto; }
@@ -713,6 +708,10 @@ select:-webkit-autofill:focus {
     line-height: 1.1em; }
     .content__medium-text-p ul {
       line-height: 2em; }
+    .content__medium-text-p ol h3 {
+      margin: 0 0 1vw; }
+    .content__medium-text-p ol p {
+      margin-bottom: 2vw; }
     .content__medium-text-p p {
       margin-bottom: 1.6vw; }
     .content__medium-text-p__dash {
@@ -1516,7 +1515,7 @@ select:-webkit-autofill:focus {
     .content__banner-trio-gossector:before {
       background: url("../images/flag.jpg") no-repeat center center/cover; }
   .content__light-shadow {
-    z-index: 4;
+    z-index: 6;
     display: flex;
     background-color: #fff;
     opacity: 0.95;
