@@ -832,21 +832,23 @@ select:-webkit-autofill:focus {
         font-size: 0.9em;
         display: inline-block;
         width: 70%; }
-  .content__advantages_medium > div > div {
-    margin-bottom: 30px; }
-  .content__advantages_medium h5 {
-    font-size: 1em;
-    line-height: 1.5em;
-    margin: 0 0 0.5vw 1vw; }
-  .content__advantages_medium p {
-    margin-left: 1vw;
-    display: block;
-    width: 80%; }
-  .content__advantages_medium__medium-p {
-    font-size: 1.1em !important;
-    letter-spacing: -1px !important; }
-  .content__advantages_medium .content__advantages_small__item > div {
-    margin-bottom: 2vw; }
+  .content__advantages_medium {
+    padding-left: 1vw; }
+    .content__advantages_medium > div > div {
+      margin-bottom: 30px; }
+    .content__advantages_medium h5 {
+      font-size: 1em;
+      line-height: 1.5em;
+      margin: 0 0 0.5vw 1vw; }
+    .content__advantages_medium p {
+      margin-left: 1vw;
+      display: block;
+      width: 80%; }
+    .content__advantages_medium__medium-p {
+      font-size: 1.1em !important;
+      letter-spacing: -1px !important; }
+    .content__advantages_medium .content__advantages_small__item > div {
+      margin-bottom: 2vw; }
   .content__manager {
     background-color: #222328;
     border-radius: 15px;
@@ -1484,7 +1486,10 @@ select:-webkit-autofill:focus {
           opacity: 1; }
   .content__banner-trio {
     color: #fff;
-    text-align: center; }
+    text-align: center;
+    display: flex; }
+    .content__banner-trio > div {
+      margin: auto; }
     .content__banner-trio h5 {
       text-transform: none;
       font-size: 1.5em; }
@@ -1492,6 +1497,8 @@ select:-webkit-autofill:focus {
       top: calc(30px + 2vw); }
     .content__banner-trio:before {
       background: url("../images/c5.jpg") no-repeat center 80%/150%; }
+    .content__banner-trio-hosting:before {
+      background: url("../images/chassis.jpg") no-repeat center center/cover; }
   .content__light-shadow {
     z-index: 4;
     display: flex;

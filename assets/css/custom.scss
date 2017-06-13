@@ -994,6 +994,7 @@ select:-webkit-autofill:focus {
   }
 
   &__advantages_medium {
+    padding-left: 1vw;
     & >div > div {
       margin-bottom: 30px;
     }
@@ -1831,6 +1832,10 @@ select:-webkit-autofill:focus {
   &__banner-trio {
     color: #fff;
     text-align: center;
+    display: flex;
+    & > div {
+      margin: auto;
+    }
     h5 {
       text-transform: none;
       font-size: 1.5em;
@@ -1840,6 +1845,12 @@ select:-webkit-autofill:focus {
     }
     &:before {
       background: url('../images/c5.jpg') no-repeat center 80% / 150%;
+    }
+    &-hosting {
+
+      &:before {
+        background: url('../images/chassis.jpg') no-repeat center center / cover;
+      }
     }
   }
 
