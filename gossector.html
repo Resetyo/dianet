@@ -12,6 +12,23 @@
   <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body>
+  <div class="sign-in-shade">
+    <button class="close">Закрыть&nbsp;&nbsp;&nbsp;&nbsp;<div class="modal-cross">&times;</div></button>
+
+    <form action="" class="-visor-no-click live-labels">
+      <h2>вход</h2>
+      <div class="form-group">
+        <label for="card_number">Номер карточки:</label>
+        <input class="form-control" id="card_number" type="text" name="card_number" required>
+      </div>
+      <div class="form-group">
+        <label for="access_code">Код доступа к системе:</label>
+        <input class="form-control" id="access_code" type="text" name="access_code" required>
+      </div>
+      <button type="submit" class="orange-button">Войти</button>
+    </form>
+  </div>
+
   <div class="wrapper">
     <header>
       <div class="main-menu">
@@ -55,7 +72,7 @@
       </div>
       <div class="separator"></div>
 
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
@@ -86,12 +103,11 @@
               <li><a href="#">Услуги для бизнеса</a></li>
               <li><a href="#">Услуги для дома</a></li>
               <li><a href="#">Гос. сектору</a></li>
-              <li><a href="#">Акции</a></li>
               <li><a href="#">Способы оплаты</a></li>
               <li><a href="#">Клиентам</a></li>
               <li><a href="#">О компании</a></li>
               <li><a href="#">Контакты</a></li>
-              <li class="navbar-collapse-call"><a href="#">Заказать звонок</a>
+              <li class="navbar-collapse-call"><a href="#" data-toggle="modal" data-target="#contactModal">Заказать звонок</a>
               <a href="tel:(3852) 567-567">(3852) 567-567</a> </li>
             </ul>
           </div><!-- /.navbar-collapse -->
@@ -131,7 +147,7 @@
                   <div class="content__advantages_medium__image">
                     <img src="assets/images/docs-o.svg">
                   </div>
-                  <h5>Интернет</h5>
+                  <h5 class="text-center">Интернет</h5>
                 </div>
               </div>
 
@@ -140,7 +156,7 @@
                   <div class="content__advantages_medium__image">
                     <img src="assets/images/phone-o.svg">
                   </div>
-                  <h5>Телефония</h5>
+                  <h5 class="text-center">Телефония</h5>
                 </div>
               </div>
 
@@ -151,18 +167,18 @@
                   <div class="content__advantages_medium__image">
                     <img src="assets/images/2comps-o.svg">
                   </div>
-                  <h5>Корпоративные сети</h5>
+                  <h5 class="text-center">Корпоративные сети</h5>
                 </div>
               </div>
 
-              <div class="clearfix"></div>
+              <div class="clearfix hidden-xs"></div>
 
               <div class="col-xs-6 col-sm-4">
                 <div class="content__advantages_small__item">
                   <div class="content__advantages_medium__image">
                     <img src="assets/images/camera-o.svg">
                   </div>
-                  <h5>Видеонаблюдение</h5>
+                  <h5 class="text-center">Видеонаблюдение</h5>
                 </div>
               </div>
 
@@ -173,7 +189,7 @@
                   <div class="content__advantages_medium__image">
                     <img src="assets/images/router-o.svg">
                   </div>
-                  <h5>WIFI-сеть для сотрудников и клиентов</h5>
+                  <h5 class="text-center">WIFI-сеть для сотрудников и клиентов</h5>
                 </div>
               </div>
 
@@ -182,7 +198,7 @@
                   <div class="content__advantages_medium__image">
                     <img src="assets/images/server-o.svg">
                   </div>
-                  <h5>Разместим ваши серверы у себя</h5>
+                  <h5 class="text-center">Разместим ваши серверы у себя</h5>
                 </div>
               </div>
             </div>
@@ -249,8 +265,8 @@
             <div class="license-carousel">
               <div class="custom-carousel__items">
                 <div class="item">
-                  <a class="lightbox-image-link" href="assets/images/license.png" data-lightbox="lightbox-1">
-                    <img class="lightbox-image" src="assets/images/license.png">
+                  <a class="lightbox-image-link" href="assets/images/license.jpg" data-lightbox="lightbox-1">
+                    <img class="lightbox-image" src="assets/images/license.jpg">
                   </a>
                   <div class="carousel-divider"></div>
                   <div class="carousel-text">
@@ -259,8 +275,8 @@
                   </div>
                 </div>
                 <div class="item">
-                  <a class="lightbox-image-link" href="assets/images/license.png" data-lightbox="lightbox-1">
-                    <img class="lightbox-image" src="assets/images/license.png">
+                  <a class="lightbox-image-link" href="assets/images/license.jpg" data-lightbox="lightbox-1">
+                    <img class="lightbox-image" src="assets/images/license.jpg">
                   </a>
                   <div class="carousel-divider"></div>
                   <div class="carousel-text">
@@ -269,8 +285,8 @@
                   </div>
                 </div>
                 <div class="item">
-                  <a class="lightbox-image-link" href="assets/images/license.png" data-lightbox="lightbox-1">
-                    <img class="lightbox-image" src="assets/images/license.png">
+                  <a class="lightbox-image-link" href="assets/images/license.jpg" data-lightbox="lightbox-1">
+                    <img class="lightbox-image" src="assets/images/license.jpg">
                   </a>
                   <div class="carousel-divider"></div>
                   <div class="carousel-text">
@@ -288,8 +304,8 @@
 
             <div class="mobile-license-carousel owl-carousel owl-theme">
               <div class="item">
-                <a class="lightbox-image-link" href="assets/images/license.png" data-lightbox="lightbox-1">
-                  <img class="lightbox-image" src="assets/images/license.png">
+                <a class="lightbox-image-link" href="assets/images/license.jpg" data-lightbox="lightbox-1">
+                  <img class="lightbox-image" src="assets/images/license.jpg">
                 </a>
                 <div class="carousel-divider"></div>
                 <div class="carousel-text">
@@ -298,8 +314,8 @@
                 </div>
               </div>
               <div class="item">
-                <a class="lightbox-image-link" href="assets/images/license.png" data-lightbox="lightbox-1">
-                  <img class="lightbox-image" src="assets/images/license.png">
+                <a class="lightbox-image-link" href="assets/images/license.jpg" data-lightbox="lightbox-1">
+                  <img class="lightbox-image" src="assets/images/license.jpg">
                 </a>
                 <div class="carousel-divider"></div>
                 <div class="carousel-text">
@@ -308,8 +324,8 @@
                 </div>
               </div>
               <div class="item">
-                <a class="lightbox-image-link" href="assets/images/license.png" data-lightbox="lightbox-1">
-                  <img class="lightbox-image" src="assets/images/license.png">
+                <a class="lightbox-image-link" href="assets/images/license.jpg" data-lightbox="lightbox-1">
+                  <img class="lightbox-image" src="assets/images/license.jpg">
                 </a>
                 <div class="carousel-divider"></div>
                 <div class="carousel-text">
@@ -573,15 +589,15 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Закрыть&nbsp;&nbsp;&nbsp;&nbsp;<div class="modal-cross">&times;</span></div></button>
           <h5 class="modal-title">заказать звонок</h5>
         </div>
-        <form action="" class="-visor-no-click live-labels">
+        <form action="" class="-visor-no-click live-labels" autocomplete="off">
           <div class="modal-body">
             <div class="form-group">
               <label for="name">Имя:</label>
-              <input class="form-control" id="name" type="text" name="name">
+              <input class="form-control" id="name" type="text" name="name" required>
             </div>
             <div class="form-group">
               <label for="phone">Телефон:</label>
-              <input class="form-control" id="phone" type="text" name="phone">
+              <input class="form-control" id="phone" type="text" name="phone" required>
             </div>
           </div>
           <div class="modal-footer">

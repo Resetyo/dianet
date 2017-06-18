@@ -10,7 +10,7 @@ $orangeLight: #f99531;
   overflow: hidden;
   position: relative;
   height: 22vw;
-  &_blured:before {
+  &_blured > img {
     filter: blur(2px);
   }
   .item {
@@ -19,7 +19,7 @@ $orangeLight: #f99531;
     -ms-transform: translateZ(0);
     -o-transform: translateZ(0);
     transform: translateZ(0);
-    transition: opacity 0.5s, width 0.3s, top 0.3s, left 0.3s;
+    transition: opacity 0.8s cubic-bezier(1,.02,.99,.74), width 0.3s, top 0.3s, left 0.3s;
     position: absolute;
     display: none;
     float: left;
@@ -88,6 +88,15 @@ $orangeLight: #f99531;
       display: block;
       margin-bottom: 10px;
       border-radius: 30px;
+      cursor: pointer;
+      &.custom-carousel__controls_disabled {
+        opacity: 0.5;
+        background: none !important;
+        cursor: default;
+        &:hover, &:focus {
+          background: none !important;
+        }
+      }
     }
   }
 }

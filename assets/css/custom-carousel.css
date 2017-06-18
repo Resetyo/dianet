@@ -5,7 +5,7 @@
   overflow: hidden;
   position: relative;
   height: 22vw; }
-  .custom-carousel_blured:before {
+  .custom-carousel_blured > img {
     filter: blur(2px); }
   .custom-carousel .item {
     -webkit-transform: translateZ(0);
@@ -13,7 +13,7 @@
     -ms-transform: translateZ(0);
     -o-transform: translateZ(0);
     transform: translateZ(0);
-    transition: opacity 0.5s, width 0.3s, top 0.3s, left 0.3s;
+    transition: opacity 0.8s cubic-bezier(1, 0.02, 0.99, 0.74), width 0.3s, top 0.3s, left 0.3s;
     position: absolute;
     display: none;
     float: left;
@@ -70,4 +70,11 @@
     .custom-carousel__controls img {
       display: block;
       margin-bottom: 10px;
-      border-radius: 30px; }
+      border-radius: 30px;
+      cursor: pointer; }
+      .custom-carousel__controls img.custom-carousel__controls_disabled {
+        opacity: 0.5;
+        background: none !important;
+        cursor: default; }
+        .custom-carousel__controls img.custom-carousel__controls_disabled:hover, .custom-carousel__controls img.custom-carousel__controls_disabled:focus {
+          background: none !important; }

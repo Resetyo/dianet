@@ -1,0 +1,18 @@
+<svg width="109" height="85" viewBox="0 0 109 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Component</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-40512 4627)">
+<g id="Component">
+<g id="Vector 17">
+<use xlink:href="#path0_fill" transform="matrix(-1 1.22465e-16 -1.22465e-16 -1 40621 -4542)" fill="#F99531"/>
+</g>
+<g id="Union">
+<use xlink:href="#path1_fill" transform="translate(40564 -4617)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 51.9745 3.9388L 2.96177 80.3807C 1.68152 82.3774 3.11534 85 5.48723 85L 103.513 85C 105.885 85 107.318 82.3774 106.038 80.3807L 57.0255 3.9388C 55.8451 2.09782 53.1549 2.09782 51.9745 3.9388Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 3.9944 35.2683L 5.98659 3.18311C 6.09596 1.45801 4.72487 0 2.9944 0C 1.26784 0 -0.103257 1.45801 0.00611829 3.18311L 1.99831 35.2683C 2.07643 36.519 3.91627 36.519 3.9944 35.2683ZM 2.9944 44C 4.17018 44 5.12331 43.062 5.12331 41.9048C 5.12331 40.7476 4.17018 39.8096 2.9944 39.8096C 1.82252 39.8096 0.8694 40.7476 0.8694 41.9048C 0.8694 43.062 1.82252 44 2.9944 44Z"/>
+</defs>
+</svg>

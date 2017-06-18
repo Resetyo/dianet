@@ -12,6 +12,23 @@
   <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body>
+  <div class="sign-in-shade">
+    <button class="close">Закрыть&nbsp;&nbsp;&nbsp;&nbsp;<div class="modal-cross">&times;</div></button>
+
+    <form action="" class="-visor-no-click live-labels">
+      <h2>вход</h2>
+      <div class="form-group">
+        <label for="card_number">Номер карточки:</label>
+        <input class="form-control" id="card_number" type="text" name="card_number" required>
+      </div>
+      <div class="form-group">
+        <label for="access_code">Код доступа к системе:</label>
+        <input class="form-control" id="access_code" type="text" name="access_code" required>
+      </div>
+      <button type="submit" class="orange-button">Войти</button>
+    </form>
+  </div>
+
   <div class="wrapper">
     <header>
       <div class="main-menu">
@@ -55,7 +72,7 @@
       </div>
       <div class="separator"></div>
 
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
@@ -86,12 +103,11 @@
               <li><a href="#">Услуги для бизнеса</a></li>
               <li><a href="#">Услуги для дома</a></li>
               <li><a href="#">Гос. сектору</a></li>
-              <li><a href="#">Акции</a></li>
               <li><a href="#">Способы оплаты</a></li>
               <li><a href="#">Клиентам</a></li>
               <li><a href="#">О компании</a></li>
               <li><a href="#">Контакты</a></li>
-              <li class="navbar-collapse-call"><a href="#">Заказать звонок</a>
+              <li class="navbar-collapse-call"><a href="#" data-toggle="modal" data-target="#contactModal">Заказать звонок</a>
               <a href="tel:(3852) 567-567">(3852) 567-567</a> </li>
             </ul>
           </div><!-- /.navbar-collapse -->
@@ -133,10 +149,11 @@
                 <img src="assets/images/address-success.svg">
               </div>
             </div>
+            <br class="visible-xs-block">
             <div>
               <h2>Хорошие новости! Мы можем вас подключить</h2>
               <p>
-                Выберите тариф &ndash; и в течение 3-х рабочих дней вы сможете смотреть фильмы,<br>
+                Выберите тариф &ndash; и в течение 3-х рабочих дней вы сможете смотреть фильмы,
                 играть и общаться с друзьями по сети
               </p>
               <a href="#tariffs" class="orange-button">выбрать тариф</a> <!-- redirect to this page -->
@@ -152,6 +169,7 @@
                 <img src="assets/images/address-missing.svg">
               </div>
             </div>
+            <br class="visible-xs-block">
             <div>
               <h2>Ваш дом пока не подключен</h2>
               <p>
@@ -197,8 +215,8 @@
             </p>
           </div>
 
-          <h3>Тарифы</h3>
           <a name="tariffs"></a>
+          <h3>Тарифы</h3>
           <div class="content__tariffs">
 
             <div class="content__tariffs__item">
@@ -319,26 +337,6 @@
                             <td>1,95 &#8381;</td>
                           </tr>
                         </table>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel">
-                    <div class="panel-heading" role="tab" id="other_city_headingTwo">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#other_city_collapseTwo" aria-expanded="false" aria-controls="other_city_collapseTwo">
-                          Красноярский край <img src="assets/images/dropdown.svg">
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="other_city_collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="other_city_headingTwo">
-                      <div class="panel-body">
-                      <table class="table">
-                        <tr>
-                          <td>
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                          </td>
-                        </tr>
-                      </table>
                       </div>
                     </div>
                   </div>
@@ -596,15 +594,15 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Закрыть&nbsp;&nbsp;&nbsp;&nbsp;<div class="modal-cross">&times;</span></div></button>
           <h5 class="modal-title">заказать звонок</h5>
         </div>
-        <form action="" class="-visor-no-click live-labels">
+        <form action="" class="-visor-no-click live-labels" autocomplete="off">
           <div class="modal-body">
             <div class="form-group">
               <label for="name">Имя:</label>
-              <input class="form-control" id="name" type="text" name="name">
+              <input class="form-control" id="name" type="text" name="name" required>
             </div>
             <div class="form-group">
               <label for="phone">Телефон:</label>
-              <input class="form-control" id="phone" type="text" name="phone">
+              <input class="form-control" id="phone" type="text" name="phone" required>
             </div>
           </div>
           <div class="modal-footer">

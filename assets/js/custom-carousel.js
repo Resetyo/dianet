@@ -11,7 +11,7 @@ $.fn.customCarousel = function(option) {
     th.find(".item:eq( 2 )").addClass('item-third')
         .css({'z-index': '1', 'opacity': '1'});
     th.find('.custom-carousel__controls .up')
-        .css({'opacity': '0.5', 'cursor': 'default'});
+        .addClass('custom-carousel__controls_disabled');
     if(sec.length == 0) {
         th.find('.custom-carousel__controls').hide();
     }
@@ -28,7 +28,7 @@ $.fn.customCarousel = function(option) {
         if (!i.hasClass('item-first')) {
             f.prev()
                 .css({'top': '1.4vw', 'opacity': '1', 'z-index': '4', 'width': '100%'})
-                .fadeIn()
+                // .fadeIn()
                 .addClass('item-first');
             f.css({'top': '0.7vw', 'left': '3%', 'width': '94%', 'z-index': '3'})
                 .removeClass('item-first').addClass('item-second');
@@ -37,10 +37,10 @@ $.fn.customCarousel = function(option) {
             t.css({'display': 'none'}).removeClass('item-third');
             
             if(f.prev().prev().length == 0){
-                th.css({'opacity': '0.5', 'cursor': 'default'});
+                th.addClass('custom-carousel__controls_disabled');
             }
 
-            th.next().css({'opacity': '1', 'cursor': 'pointer'});
+            th.next().removeClass('custom-carousel__controls_disabled');
         }
         backgroundblur();
     }
@@ -53,21 +53,27 @@ $.fn.customCarousel = function(option) {
             var f = th.parent().parent().find(".item-first");
             var s = th.parent().parent().find(".item-second");
             var t = th.parent().parent().find(".item-third");
-            f.css({'top': '4vw', 'opacity': '0', 'z-index': '1'})
+            f.css({'top': '4vw', 'opacity': '0'})
                 .removeClass('item-first');
-            s.css({'top': '1.4vw', 'left': '0%', 'opacity': '1', 'width': '100%', 'z-index': '4'})
+            s.css({'top': '1.4vw', 'left': '0%', 'opacity': '1', 'width': '100%'})
                 .removeClass('item-second').addClass('item-first');
-            t.css({'top': '0.7vw', 'left': '3%', 'width': '94%', 'z-index': '3'})
+            t.css({'top': '0.7vw', 'left': '3%', 'width': '94%'})
                 .removeClass('item-third').addClass('item-second');
             n.show()
                 .css({'top': '0vw', 'left': '6%', 'opacity': '1', 'width': '88%', 'z-index': '2' })
                 .addClass('item-third');
 
             if(s.next().length == 0){
-                th.css({'opacity': '0.5', 'cursor': 'default'});
+                th.addClass('custom-carousel__controls_disabled');
             }
+            setTimeout(function(){
+                f.css({'z-index': '1'});
+                s.css({'z-index': '4'});
+                t.css({'z-index': '3'});
+                n.css({'z-index': '2'});
+            },800);
 
-            th.prev().css({'opacity': '1', 'cursor': 'pointer'});
+            th.prev().removeClass('custom-carousel__controls_disabled');
         }
         backgroundblur();
     }

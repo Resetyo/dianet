@@ -164,13 +164,16 @@ function initMap() {
   if (matchMedia) {
     var mq = window.matchMedia("(min-width: 1024px)");
     var zoom;
-    mq.addListener(WidthChange);
-    if(mq.matches) {
-      zoom = 8;
-      lng = 84.767141;
-    } else {
-      zoom = 7;
-      lng = 83.267141;
+    mq.addListener(WidthChange2);
+    WidthChange2(mq);
+    function WidthChange2(){
+        if(mq.matches) {
+          zoom = 8;
+          lng = 84.767141;
+        } else {
+          zoom = 7;
+          lng = 83.267141;
+        }
     }
   }
     

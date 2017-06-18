@@ -12,6 +12,23 @@
   <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body>
+  <div class="sign-in-shade">
+    <button class="close">Закрыть&nbsp;&nbsp;&nbsp;&nbsp;<div class="modal-cross">&times;</div></button>
+
+    <form action="" class="-visor-no-click live-labels">
+      <h2>вход</h2>
+      <div class="form-group">
+        <label for="card_number">Номер карточки:</label>
+        <input class="form-control" id="card_number" type="text" name="card_number" required>
+      </div>
+      <div class="form-group">
+        <label for="access_code">Код доступа к системе:</label>
+        <input class="form-control" id="access_code" type="text" name="access_code" required>
+      </div>
+      <button type="submit" class="orange-button">Войти</button>
+    </form>
+  </div>
+
   <div class="wrapper">
     <header>
       <div class="main-menu">
@@ -55,7 +72,7 @@
       </div>
       <div class="separator"></div>
 
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
@@ -86,12 +103,11 @@
               <li><a href="#">Услуги для бизнеса</a></li>
               <li><a href="#">Услуги для дома</a></li>
               <li><a href="#">Гос. сектору</a></li>
-              <li><a href="#">Акции</a></li>
               <li><a href="#">Способы оплаты</a></li>
               <li><a href="#">Клиентам</a></li>
               <li><a href="#">О компании</a></li>
               <li><a href="#">Контакты</a></li>
-              <li class="navbar-collapse-call"><a href="#">Заказать звонок</a>
+              <li class="navbar-collapse-call"><a href="#" data-toggle="modal" data-target="#contactModal">Заказать звонок</a>
               <a href="tel:(3852) 567-567">(3852) 567-567</a> </li>
             </ul>
           </div><!-- /.navbar-collapse -->
@@ -171,8 +187,11 @@
                     <td>650</td>
                   </tr>
                 </table>
-                
               </div>
+
+              <p><i>
+                Примечание: стоимость ТП указана с учетом НДС (18%), файлообменная сеть &laquo;Пирс&raquo;
+              </i></p>
               <p>
                 Кабельное телевидение включает в себя 64 аналоговых канала и 123 цифровых каналов в тестовом режиме,
                 из них в 35 HD-качестве.
@@ -258,15 +277,15 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Закрыть&nbsp;&nbsp;&nbsp;&nbsp;<div class="modal-cross">&times;</span></div></button>
           <h5 class="modal-title">заказать звонок</h5>
         </div>
-        <form action="" class="-visor-no-click live-labels">
+        <form action="" class="-visor-no-click live-labels" autocomplete="off">
           <div class="modal-body">
             <div class="form-group">
               <label for="name">Имя:</label>
-              <input class="form-control" id="name" type="text" name="name">
+              <input class="form-control" id="name" type="text" name="name" required>
             </div>
             <div class="form-group">
               <label for="phone">Телефон:</label>
-              <input class="form-control" id="phone" type="text" name="phone">
+              <input class="form-control" id="phone" type="text" name="phone" required>
             </div>
           </div>
           <div class="modal-footer">
