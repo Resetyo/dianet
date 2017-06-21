@@ -152,7 +152,8 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   -webkit-text-fill-color: #fff;
   transition: background-color 5000s ease-in-out 0s !important;
-  -webkit-box-shadow: 0 0 0 1000px rgb(134,135,140) inset !important;
+  // -webkit-box-shadow: 0 0 0 1000px rgb(134,135,140) inset !important;
+  -webkit-box-shadow: none !important;
 }
 
 .orange-button {
@@ -201,6 +202,11 @@ select:-webkit-autofill:focus {
   height: 44vw;
   position: absolute;
   z-index: -1;
+  top: 0;
+  &-contacts {
+    height: 33vw;
+    border-radius: 15px;
+  }
 }
 
 .main-menu {
@@ -450,13 +456,12 @@ select:-webkit-autofill:focus {
 .modal {
   &-content {
     backdrop-filter: blur(3px);
-    
   }
   &-sm {
     width: 432px;
   }
   &-dialog {
-    margin: 225px auto;
+    margin: 180px auto;
   }
   &-header {
     padding: 50px 30px 10px;
@@ -467,16 +472,22 @@ select:-webkit-autofill:focus {
   }
   &-body {
     padding: 30px 30px 10px;
+    h3 {
+      color: #fff;
+      font-size: 1.4em;
+      letter-spacing: 1px;
+      margin-left: 0;
+    }
   }
   &-footer {
     padding: 0 30px 80px 37px;
     text-align: left;
   }
   &-cross {
-    padding: 5px 9px;
-    border-radius:20px;
+    padding: 5px 11px;
+    border-radius:25px;
     background-color: #000;
-    font-size: 1.5em;
+    font-size: 30px;
     display: inline-block;
   }
   &-content {
@@ -547,6 +558,31 @@ select:-webkit-autofill:focus {
   }
 
   &__table {
+    #myTabs > li, #myTabs2 > li {
+      display: none;
+    }
+    .select {
+      width: auto;
+      display: inline-block;
+      & > ul {
+        width: 200px;
+        background-color: #FFF;
+        border: 1px solid rgba(0,0,0,0.15);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+        li {
+          color: $grayDefault;
+          margin-bottom: 0 !important;
+          font-size: 0.8em;
+        }
+      }
+      &-styled {
+        color: $grayDefault;
+        font-size: 0.8em;
+        img {
+          margin-left: 15px;
+        }
+      }
+    }
     margin: 0 0 4vw 30px;
     hr {
       width: 94%;
@@ -556,6 +592,7 @@ select:-webkit-autofill:focus {
       border: none;
       padding: 0 15px;
       & > li {
+        margin-bottom: 0 !important;
         text-transform: uppercase;
         font: bold 0.9em 'Raleway', sans-serif;
         a {
@@ -579,19 +616,26 @@ select:-webkit-autofill:focus {
       background: none;
       &-title {
         padding: 20px 20px 20px 30px;
-        & > a {
-          font-size: 0.8em;
-          img {
-            margin-left: 15px;
-          }
-        }
+        font-size: 0.8em;
       }
       &-body {
         padding: 0 25px;
         border-top: none !important;
       }
+      ul {
+        list-style-type: none;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        li {
+          margin-bottom: 20px;
+          line-height: 1.5em;
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
     }
-    .tab-content {
+    & > .tab-content {
       border: solid 2px $grayBackground;
       border-radius: 15px;
     }
@@ -605,7 +649,8 @@ select:-webkit-autofill:focus {
       & > ul {
         list-style-type: none;
         padding: 0;
-        margin-left: 6vw;
+        margin-left: 15px;
+        margin-top: 15px;
         li {
           margin-bottom: 2vw;
         }
@@ -640,6 +685,77 @@ select:-webkit-autofill:focus {
     }
   }
 
+  &__for-clients {
+    margin-bottom: 4vw;
+    & .row > div > div {
+      padding: 10px;
+      border-radius: 15px;
+      background-color: $grayBackground;
+      height: 150px;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      & > div:first-child {
+        height: 100%;
+        display: flex;
+        float: left;
+        width: 39%;
+        img {
+          margin: auto;
+        }
+      }
+      & > div:last-child {
+        width: 60%;
+        h5 {
+          font-size: 1em;
+          line-height: 1.5em;
+        }
+        p {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+
+  &__contacts {
+    &.content__table {
+      margin-left: 0;
+    }
+    hr {
+      border-top: $grayLight solid 1px;
+      margin-top: 15px;
+      margin-bottom: 40px;
+      width: 100%;
+      & + p {
+        color: $grayLight;
+        position: absolute;
+        right: 2vw;
+        top: 1em;
+      }
+    }
+    .tab-content {
+      border: 0;
+    }
+    .panel-body {
+      padding: 0;
+    }
+    .select-styled > div {
+      font-size: 1.8em;
+      line-height: 1em;
+    }
+    .vcard {
+      & > .row > div {
+        padding-left: 45px;
+        &:last-child {
+          padding: 40px 15px 0;
+        }
+      }
+    }
+  }
+
   &__wrapper {
     width: 62%;
     margin: 0 auto;
@@ -651,18 +767,6 @@ select:-webkit-autofill:focus {
     position: relative;
     &.row {
       width: calc(94% + 30px);
-    }
-    & > h4 {
-      font-size: 1.5em;
-      margin: 2vw;
-      img {
-        margin-left: 2vw;
-      }
-      & + hr {
-        border-top: $grayLight solid 1px;
-        margin-top: 25px;
-        margin-bottom: 40px;
-      }
     }
   }
 
@@ -848,7 +952,6 @@ select:-webkit-autofill:focus {
         padding: 0 3vw;
         img {
           margin: auto;
-          // width: 100%;
         }
       }
     }
@@ -876,10 +979,29 @@ select:-webkit-autofill:focus {
       border: 1px solid $grayBackground;
       border-radius: 15px;
       height: 13vw;
-      display: flex;
-      margin-bottom: 15px;
+      margin-bottom: 15px;  
+      position: relative;
       & > img {
-        margin: auto;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &:last-child {
+          opacity: 0;
+          position: absolute;
+          z-index: 2;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &:last-child:hover {
+          opacity: 1;
+        }
+      }
+      & > a {
+        display: block;
+        margin-top: 3vw !important;
       }
     }
   }
@@ -939,11 +1061,8 @@ select:-webkit-autofill:focus {
 
   &__animation {
     overflow: hidden;
-    // height: 524px;
     height: 384px;
     display: flex;
-
-    // display: block;
     text-align: center;
 
     &__inner {
@@ -982,7 +1101,6 @@ select:-webkit-autofill:focus {
     p {
       font-size: 1.2em;
       line-height: 1.5em;
-      // margin-top: 100px;
       margin: auto;
 
     }
@@ -1238,8 +1356,8 @@ select:-webkit-autofill:focus {
           &:checked + label:before {
             content: "\2713";
             text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-            font-size: 2em;
-            line-height: 1em;
+            font-size: 30px;
+            line-height: 0.7em;
           }
           &:focus + label:before {
             box-shadow: 0 0 0 3px rgba(200,200,200,.5);
@@ -2228,6 +2346,14 @@ select:-webkit-autofill:focus {
       }
     }
 
+    &__for-clients {
+      & .row > div {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 15px;
+      }
+    }
+
     &__wrapper {
       width: auto;
     }
@@ -2358,7 +2484,6 @@ select:-webkit-autofill:focus {
         height: 100px;
       }
       p {
-        // margin-top: 0;
         letter-spacing: normal;
         font-size: 1.2em;
       }
@@ -2559,7 +2684,6 @@ select:-webkit-autofill:focus {
     }
 
     &__manager {
-      display: none;
       height: 200px;
       padding-top: 30px;
       & > div:last-child p:nth-child(2) {
@@ -2655,6 +2779,7 @@ select:-webkit-autofill:focus {
           }
         }
         .content__manager {
+          display: none;
           height: 220px;
         }
       }
@@ -2714,7 +2839,7 @@ select:-webkit-autofill:focus {
           position: absolute;
           z-index: 2;
           font-size: 1.3em;
-          bottom: 30px;
+          bottom: 35px;
           width: 100%;
           left: 50%;
           transform: translateX(-50%);
@@ -3110,9 +3235,6 @@ select:-webkit-autofill:focus {
       }
     }
   }
-  .content {
-
-  }
 }
 
 @media(max-width: 680px) {
@@ -3131,6 +3253,13 @@ select:-webkit-autofill:focus {
       }
     }
   }
+}
+
+@media(min-width: 1900px) {
+  .modal-sm {
+    width: 600px;
+  }
+
 }
 
 @media (min-width: 1024px) { //desktop
@@ -3212,7 +3341,6 @@ select:-webkit-autofill:focus {
         }
         a {
           color: #fff;
-          float: right;
           margin-top: 2vw;
         }
         &__wrapper {
@@ -3224,6 +3352,16 @@ select:-webkit-autofill:focus {
           }
         }
       }
+      &__all {
+        display: block !important;
+        margin-top: 10px !important;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 0.9em;
+        &:hover, &:focus, &:active {
+          text-decoration: none;
+        }
+      }
     }
   }
 
@@ -3233,10 +3371,17 @@ select:-webkit-autofill:focus {
   .modal-sm {
     width: 320px;
   }
+  #google-map {
+    &-contacts {
+      height: 430px;
+    }
+  }
+
   .content {
     &__animation {
       display: none;
     }
+
     &__map {
       height: auto;
       padding: 10px 0 0;
@@ -3246,6 +3391,16 @@ select:-webkit-autofill:focus {
       }
       p {
         padding: 17px;
+      }
+    }
+
+    &__contacts {
+      & > p {
+        width: 150px;
+        top: 0;
+      }
+      & > hr {
+        margin-top: 25px;
       }
     }
 
@@ -3476,6 +3631,10 @@ select:-webkit-autofill:focus {
           }
         }
       }
+    }
+
+    &__address-check__success a, &__address-check__missing a {
+      padding: 15px;
     }
 
     .mobile-main-home-carousel {

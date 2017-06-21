@@ -1,5 +1,5 @@
 function initMap() {
-   var styleArray = [
+  var styleArray = [
     {
         "featureType": "administrative",
         "elementType": "labels",
@@ -176,28 +176,53 @@ function initMap() {
         }
     }
   }
-    
-  var map = new google.maps.Map(document.getElementById('google-map'), {
-    zoom: zoom,
-    center: {lat: 53.512077, lng: lng},
-    disableDefaultUI: true,
-    styles: styleArray,
-    scrollwheel: false
-  });
-  var image ='assets/images/map-logo.png'
-  var filials = [
-    new google.maps.LatLng(53.362077, 83.767141),
-    new google.maps.LatLng(53.441453, 83.920497),
-    new google.maps.LatLng(53.557427, 83.839596),
-    new google.maps.LatLng(52.506859, 85.146535),
-    new google.maps.LatLng(52.493591, 82.780864),
-    new google.maps.LatLng(53.780872, 81.313926)
-  ];
-  filials.forEach(function(filial) {
-            var marker = new google.maps.Marker({
-              position: filial,
-              icon: image,
-              map: map
-            });
-          });
- }
+  var map = document.getElementById('google-map');
+  if(map) {
+    var map = new google.maps.Map(map, {
+      zoom: zoom,
+      center: {lat: 53.512077, lng: lng},
+      disableDefaultUI: true,
+      styles: styleArray,
+      scrollwheel: false
+    });
+    var image ='assets/images/map-logo.png'
+    var filials = [
+      new google.maps.LatLng(53.362077, 83.767141),
+      new google.maps.LatLng(53.441453, 83.920497),
+      new google.maps.LatLng(53.557427, 83.839596),
+      new google.maps.LatLng(52.506859, 85.146535),
+      new google.maps.LatLng(52.493591, 82.780864),
+      new google.maps.LatLng(53.780872, 81.313926)
+    ];
+    filials.forEach(function(filial) {
+      var marker = new google.maps.Marker({
+        position: filial,
+        icon: image,
+        map: map
+      });
+    });
+  }
+
+  //contacts map
+  var map_contacts = document.getElementById('google-map-contacts');
+  if(map_contacts){
+    var geocoder = new google.maps.Geocoder();
+    var map_contacts = new google.maps.Map(map_contacts, {
+      zoom: 17,
+      center: {lat: 53.332262, lng: 83.775992},
+      disableDefaultUI: true
+    });
+    var address = document.getElementById('contact-address').textContent;
+    geocoder.geocode( { 'address': address}, function(results, status) {
+      if (status == 'OK') {
+        map_contacts.setCenter(results[0].geometry.location);
+        var marker = new google.maps.Marker({
+            map: map_contacts,
+            position: results[0].geometry.location
+        });
+      } else {
+        alert('Geocode was not successful for the following reason: ' + status);
+      }
+    });
+  }
+}

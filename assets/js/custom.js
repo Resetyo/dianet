@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('.content__address-check form').submit(function(e){
         setTimeout(function(){
             $('.content__address-check__success').show();
-             $(window).scrollTop(0);
+            $(window).scrollTop(0);
             $('.content__light-shadow').hide();
             $('.content__address-check > h2').hide();
             $('.content__address-check > form').hide();
@@ -18,6 +18,8 @@ $(document).ready(function(){
            e.preventDefault();
         }
     });
+
+    $(".dropdown").val("thevalue").change();
 
     //modal complete
     var m_submit = false;
@@ -34,11 +36,35 @@ $(document).ready(function(){
         }
     });
 
+    //modal order
+    $('.content__order form').submit(function(e){
+        e.preventDefault();
+        var matched_address = false;
+        if(matched_address){
+            $(this).submit();
+        } else {
+            $('#orderModal').modal('show');
+        }
+    });
+
+    //change address button
+    $('#orderModal').on('show.bs.modal', function(){
+        $(this).find('.modal-footer button').click(function(e){
+            e.preventDefault();
+            $('#orderModal').modal('hide');
+            $(window).scrollTop(0);
+            $('#street').focus();
+        });
+    });
+
     //sign in
     $(".main-menu__signin").click(function(e) {
         e.preventDefault();
         $(".sign-in-shade").css({'display': 'flex'});
         $(".wrapper").css({'filter': 'blur(4px)'});
+        
+        //card number mask
+        $("#card_number").mask('0000 0000 0000 0000');
     });
     $(".sign-in-shade .close").click(function(){
         $(".sign-in-shade").hide();
@@ -78,10 +104,9 @@ $(document).ready(function(){
     ];
     var cd = 24 * 60 * 60 * 1000;
     var fields = $('.main-home-carousel__stock__left');
-    console.log(fields);
     $.each(fields, function(i,field) {
         till = new Date(Date.parse($(field).data('till')));
-        console.log(till);
+        // console.log(till);
         var day = till.getDate();
         var monthIndex = till.getMonth();
 
@@ -102,11 +127,6 @@ $(document).ready(function(){
         $(field).html(left + ' ' + days + ' (' + day + ' ' + monthNames[monthIndex] + ')');
     });
 
-    //phone mask
-    $("#phone").mask('0 (000) 000-0000');
-
-    //card number mask
-    $("#card_number").mask('0000 0000 0000 0000');
 
     //block with plus
     $('.content__unfolding__plus').on("click", function(e) {
@@ -209,14 +229,13 @@ $(document).ready(function(){
         $(this).find('.content__tariffs__item__background').css({'filter': 'blur(0px)'});
     });
 
-
     //shade when address check form clicking
     $(document).mouseup(function (e) {
         var container = $('.content__address-check form');
         if (container.has(e.target).length === 0){
             $(".content__address-check__shade").removeClass('content__address-check__shaded');
             $(".content__address-check__shade_inner").removeClass('content__address-check__shaded_inner');
-            $('.nav-menu').css({'z-index':'10'});
+            $('.nav-menu').css({'z-index':'11'});
         } else {
             $(".content__address-check__shade").addClass('content__address-check__shaded');
             $(".content__address-check__shade_inner").addClass('content__address-check__shaded_inner');
@@ -224,6 +243,17 @@ $(document).ready(function(){
         }
     });
 
+    //modal autocomplete
+    $('#contactModal').on('show.bs.modal', function(e){
+        $('input').each(function(){
+            var text = $(this).val();
+            var name = $(this).attr('name');
+            $(this).after(this.outerHTML).remove();
+            $('input[name=' + name + ']').val(text);
+        });
+        //phone mask
+        $("#phone").mask('0 (000) 000-0000');
+    });
 });
 
 
@@ -253,7 +283,7 @@ function WidthChange(mql) {
     var rb = $('.content__right-block');
 
     if (mq.matches) {
-    //animation (remove if gif will be)
+    //animation
     // var target = $('.content__animation');
     // if (target.length > 0) {
     //     var targetPos = target.offset().top+400;
@@ -340,6 +370,13 @@ function WidthChange(mql) {
         .insertAfter(".content__order > h3 + div")
         .css({'margin-top': '0', 'width': '33.33333333%'});
 
+    //move unfolding to the left block
+    var unfolding = $('.content__unfolding');
+    var unfolding_header = unfolding.prev('h3');
+    // unfolding = unfolding_header.add(unfolding);
+    unfolding_header.insertAfter('.content__left-block > div:last-child');
+    unfolding.insertAfter(unfolding_header);
+
   } else {
     $('.content__brickets').off('mouseover').off('mouseout');
     $('.content__brickets__block__div a').css({'bottom': '30px', 'opacity': '1'});;
@@ -372,6 +409,13 @@ function WidthChange(mql) {
     $(".content__order__tariff").parent()
         .insertBefore(".content__order__form__submit")
         .css({'margin-top': '30px', 'display': 'inline-block', 'width': '100%'});
+
+    //move unfolding up to advantages
+    var unfolding = $('.content__unfolding');
+    var unfolding_header = unfolding.prev('h3');
+    unfolding_header.insertAfter('.content__right-block .row');
+    unfolding.insertAfter(unfolding_header);
+
   }
 }
 
@@ -381,7 +425,11 @@ function custom_select() {
         var label = $this.prev();
         $this.addClass('select-hidden'); 
         $this.wrap('<div class="select"></div>');
-        $this.after('<div class="select-styled"><div></div><img src="assets/images/select_arrow.svg"></div>');
+        if($this.hasClass('with-gray-arrow')){
+            $this.after('<div class="select-styled"><div></div><img src="assets/images/dropdown.svg"></div>');
+        } else {
+            $this.after('<div class="select-styled"><div></div><img src="assets/images/select_arrow.svg"></div>');
+        }
 
         var $styledSelect = $this.next('div.select-styled');
         $styledSelect.children('div').text($this.children('option').eq(0).text());
@@ -427,6 +475,10 @@ function custom_select() {
             $this.val($(this).attr('rel'));
             $list.hide();
             hideLabelsOnSelectActive();
+            if($this.hasClass('with-gray-arrow')){
+                $("#link-dropdown"+$(this).attr('rel')).tab('show');
+            }
+            
         });
       
         $(document).click(function() {
@@ -434,6 +486,7 @@ function custom_select() {
             $list.hide();
             hideLabelsOnSelectActive();
         });
+
 
         function hideLabelsOnSelectActive() {
             if($styledSelect.hasClass('active') && !mq1.matches){

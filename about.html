@@ -539,7 +539,7 @@
             <p>
               Уже пользуетесь нашими услугами? Напишите пару слов о своих впечатлениях. Мы рады справедливой критике и благодарности.
             </p>
-            <a class="content__reviews__send" href="#">оставить отзыв</a>
+            <a class="content__reviews__send" href="#" data-toggle="modal" data-target="#reviewModal">оставить отзыв</a>
             <a class="content__reviews__list" href="#">читать все отзывы</a>
           </div>
         </div>
@@ -624,7 +624,7 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Закрыть&nbsp;&nbsp;&nbsp;&nbsp;<div class="modal-cross">&times;</span></div></button>
           <h5 class="modal-title">заказать звонок</h5>
         </div>
-        <form action="" class="-visor-no-click live-labels" autocomplete="off">
+        <form action="" class="-visor-no-click live-labels">
           <div class="modal-body">
             <div class="form-group">
               <label for="name">Имя:</label>
@@ -641,6 +641,39 @@
         </form>
         <div class="modal-body modal-complete">
           Наш менеджер свяжется с вами. Спасибо за заявку.
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="reviewModal">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Закрыть&nbsp;&nbsp;&nbsp;&nbsp;<div class="modal-cross">&times;</span></div></button>
+          <h5 class="modal-title">отправить отзыв</h5>
+        </div>
+        <form action="" class="-visor-no-click live-labels">
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="review_name">Имя:</label>
+              <input class="form-control" id="review_name" type="text" name="review_name" required>
+            </div>
+            <div class="form-group">
+              <label for="review_position">Должность:</label>
+              <input class="form-control" id="review_position" type="text" name="review_position">
+            </div>
+            <div class="form-group">
+              <label for="review_text">Отзыв:</label>
+              <input class="form-control" id="review_text" type="text" name="review_text" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="orange-button">Отправить</button>
+          </div>
+        </form>
+        <div class="modal-body modal-complete">
+          Информация принята. Спасибо за отзыв.
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
