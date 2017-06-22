@@ -135,7 +135,7 @@ select:-webkit-autofill:focus {
   width: 100%;
   height: 44vw;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   top: 0; }
   #google-map-contacts {
     height: 33vw;
@@ -526,6 +526,26 @@ select:-webkit-autofill:focus {
     .content__table .table {
       margin-bottom: 35px;
       table-layout: fixed; }
+    .content__table .reviews-carousel {
+      height: auto !important;
+      padding: 15px; }
+      .content__table .reviews-carousel .item {
+        position: relative;
+        height: auto !important;
+        padding: 0 !important;
+        top: 0; }
+        .content__table .reviews-carousel .item img {
+          margin-left: 2vw; }
+      .content__table .reviews-carousel .carousel-divider {
+        height: auto !important;
+        margin: 0;
+        top: 40px;
+        left: 14vw;
+        bottom: 45px;
+        position: absolute;
+        width: 2px; }
+      .content__table .reviews-carousel .carousel-text {
+        margin: 30px 10px 30px 3vw !important; }
   .content__for-clients {
     margin-bottom: 4vw; }
     .content__for-clients .row > div > div {
@@ -929,7 +949,8 @@ select:-webkit-autofill:focus {
       width: 40%;
       left: 53%;
       top: 15.5vw;
-      padding: 5px; }
+      padding: 5px;
+      z-index: 2; }
       .content__map__text p {
         line-height: 1.5em;
         margin-bottom: 20px; }
@@ -1464,7 +1485,7 @@ select:-webkit-autofill:focus {
     margin-bottom: 4vw; }
     .content__reviews .custom-carousel .item img {
       display: inline-block;
-      width: auto;
+      width: 10vw;
       height: auto;
       vertical-align: top;
       padding-top: 4vw; }
@@ -1872,6 +1893,10 @@ select:-webkit-autofill:focus {
       margin: 0 10px 4vw; }
       .content__table .nav-tabs > li > a {
         padding: 10px; }
+      .content__table .mobile-reviews-carousel {
+        height: auto !important; }
+        .content__table .mobile-reviews-carousel .owl-item {
+          height: auto !important; }
     .content__for-clients .row > div {
       padding-left: 15px;
       padding-right: 15px;
@@ -2275,15 +2300,19 @@ select:-webkit-autofill:focus {
         background-color: #eff0f4;
         border-radius: 15px; }
         .content .mobile-reviews-carousel .owl-item .item {
-          text-align: left; }
+          text-align: left;
+          position: relative; }
         .content .mobile-reviews-carousel .owl-item img {
           display: none; }
       .content .mobile-reviews-carousel .carousel-divider {
-        height: 300px;
+        height: auto !important;
+        margin: 0;
+        top: 50px;
+        left: 15px;
+        bottom: 40px;
+        position: absolute;
         width: 2px;
-        margin: 50px 15px 0 15px;
-        background-color: #f99531;
-        display: inline-block; }
+        background-color: #f99531; }
       .content .mobile-reviews-carousel .carousel-text {
         display: inline-block;
         vertical-align: top;
@@ -2292,6 +2321,7 @@ select:-webkit-autofill:focus {
         line-height: 1.5em;
         text-align: left;
         width: 80%;
+        margin: 30px 10px 30px 30px !important;
         margin: 30px auto 0;
         letter-spacing: -0.5px; }
         .content .mobile-reviews-carousel .carousel-text span {
@@ -2304,7 +2334,7 @@ select:-webkit-autofill:focus {
       .content .mobile-reviews-carousel.owl-theme .owl-dots .owl-dot.active span, .content .mobile-reviews-carousel .owl-theme .owl-dots .owl-dot:hover span {
         background: #cbcbcf; }
     .content .owl-carousel {
-      height: 444px; }
+      height: 449px; }
       .content .owl-carousel .owl-item {
         color: #fff;
         border-radius: 15px;
@@ -2577,6 +2607,8 @@ select:-webkit-autofill:focus {
 @media (max-width: 767px) {
   .modal-sm {
     width: 320px; }
+    .modal-sm h5.modal-title {
+      margin-left: 0 !important; }
   #google-map-contacts {
     height: 430px; }
   .content__animation {

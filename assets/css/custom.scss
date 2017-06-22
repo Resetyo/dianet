@@ -201,7 +201,7 @@ select:-webkit-autofill:focus {
   width: 100%;
   height: 44vw;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   top: 0;
   &-contacts {
     height: 33vw;
@@ -683,6 +683,31 @@ select:-webkit-autofill:focus {
       margin-bottom: 35px;
       table-layout: fixed;
     }
+    .reviews-carousel {
+      height: auto !important;
+      padding: 15px;
+      .item {
+        position: relative;
+        height: auto !important;
+        padding: 0 !important;
+        top: 0;
+        img {
+          margin-left: 2vw;
+        }
+      }
+      .carousel-divider {
+        height: auto !important;
+        margin: 0;
+        top: 40px;
+        left: 14vw;
+        bottom: 45px;
+        position: absolute;
+        width: 2px;
+      }
+      .carousel-text {
+        margin: 30px 10px 30px 3vw !important;
+      }
+    }
   }
 
   &__for-clients {
@@ -1118,6 +1143,7 @@ select:-webkit-autofill:focus {
       left: 53%;
       top: 15.5vw;
       padding: 5px;
+      z-index: 2;
 
       p {
         line-height: 1.5em;
@@ -1805,7 +1831,7 @@ select:-webkit-autofill:focus {
       .item {
         img {
           display: inline-block;
-          width: auto;
+          width: 10vw;
           height: auto;
           vertical-align: top;
           padding-top: 4vw;
@@ -2343,6 +2369,12 @@ select:-webkit-autofill:focus {
       margin: 0 10px 4vw;
       .nav-tabs > li > a {
         padding: 10px;
+      }
+      .mobile-reviews-carousel {
+        height: auto !important;
+        .owl-item {
+          height: auto !important;
+        }
       }
     }
 
@@ -2925,6 +2957,7 @@ select:-webkit-autofill:focus {
         border-radius: 15px;
         .item {
           text-align: left;
+          position: relative;
         }
         img {
           display: none;
@@ -2932,11 +2965,14 @@ select:-webkit-autofill:focus {
       }
       .carousel {
         &-divider {
-          height: 300px;
+          height: auto !important;
+          margin: 0;
+          top: 50px;
+          left: 15px;
+          bottom: 40px;
+          position: absolute;
           width: 2px;
-          margin: 50px 15px 0 15px;
           background-color: $orangeLight;
-          display: inline-block;
         }
         &-text {
           display: inline-block;
@@ -2946,6 +2982,8 @@ select:-webkit-autofill:focus {
           line-height: 1.5em;
           text-align: left;
           width: 80%;
+          margin: 30px 10px 30px 30px !important;
+
           margin: 30px auto 0;
           letter-spacing: -0.5px;
           span {
@@ -2966,7 +3004,7 @@ select:-webkit-autofill:focus {
     }
 
     .owl-carousel {
-      height: 444px;
+      height: 449px;
       .owl-item {
         color: #fff;
         border-radius: 15px;
@@ -3370,6 +3408,9 @@ select:-webkit-autofill:focus {
 @media (max-width: 767px) { //mobile only
   .modal-sm {
     width: 320px;
+    h5.modal-title  {
+      margin-left: 0 !important;
+    }
   }
   #google-map {
     &-contacts {
