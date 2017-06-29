@@ -19,7 +19,7 @@ $orangeLight: #f99531;
     -ms-transform: translateZ(0);
     -o-transform: translateZ(0);
     transform: translateZ(0);
-    transition: opacity 0.8s cubic-bezier(1,.02,.99,.74), width 0.3s, top 0.3s, left 0.3s;
+    transition: opacity 0.4s cubic-bezier(.1,.8,.9,.2), width 0.3s, top 0.3s, left 0.3s;
     position: absolute;
     display: none;
     float: left;

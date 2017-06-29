@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Интернет для дома | Дианэт</title>
+  <title>Оформление заявки | Дианэт</title>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/lightbox.min.css">
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/css/owl.theme.default.css">
   <link rel="stylesheet" href="assets/css/custom-carousel.css">
   <link rel="stylesheet" href="assets/css/custom.css">
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?146"></script>
 </head>
 <body>
   <div class="sign-in-shade">
@@ -144,33 +145,37 @@
             <button type="submit">проверить адрес</button>
           </form>
           <div class="content__address-check__success">
-            <div>
-              <div>
+            <div class="content__address-check__round-wrapper">
+              <div class="content__address-check__round">
+              </div>
+              <div class="content__address-check__sign-wrapper">
                 <img src="assets/images/address-success.svg">
               </div>
             </div>
             <br class="visible-xs-block">
-            <div>
+            <div class="content__address-check__complete-text">
               <h2>Хорошие новости! Мы можем вас подключить</h2>
               <p>
                 Выберите тариф &ndash; и в течение 3-х рабочих дней вы сможете смотреть фильмы,
                 играть и общаться с друзьями по сети
               </p>
-              <a href="#tariffs" class="orange-button">выбрать тариф</a> <!-- redirect to this page -->
-              <a href="#" class="content__address-check__repeat">
-                <img src="assets/images/repeat.svg">
+              <a href="#tariffs" class="orange-button">выбрать тариф</a> 
+              <a href="#" class="content__address-check__repeat"> <!-- redirect to this page -->
+                <img src="assets/images/repeat.svg"> 
                 <span>проверить другой адрес</span>
               </a>
             </div>
           </div>
           <div class="content__address-check__missing">
-            <div>
-              <div>
+            <div class="content__address-check__round-wrapper">
+              <div class="content__address-check__round">
+              </div>
+              <div class="content__address-check__sign-wrapper">
                 <img src="assets/images/address-missing.svg">
               </div>
             </div>
             <br class="visible-xs-block">
-            <div>
+            <div class="content__address-check__complete-text">
               <h2>Ваш дом пока не подключен</h2>
               <p>
                 Для подключения требуется ещё 10 заявок. Оставьте заявку – мы свяжемся, как только
@@ -537,6 +542,14 @@
                   <a href="#" class="orange-button">задать свой вопрос</a>
                 </div>
               </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-12">
+              <!-- VK Widget -->
+              <div id="vk_groups"></div>
+              <script type="text/javascript">
+              VK.Widgets.Group("vk_groups", {mode: 3, width: "auto"}, 60852653);
+              </script>
             </div>
           </div>
         </div>

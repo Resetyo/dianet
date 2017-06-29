@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/owl.theme.default.css">
   <link rel="stylesheet" href="assets/css/custom-carousel.css">
   <link rel="stylesheet" href="assets/css/custom.css">
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?146"></script>
 </head>
 <body>
   <div class="sign-in-shade">
@@ -178,7 +179,7 @@
                   <div class="content__advantages_medium__image">
                     <img src="assets/images/camera-o.svg">
                   </div>
-                  <h5 class="text-center">Видеонаблюдение</h5>
+                  <h5 class="text-center">Видео-наблюдение</h5>
                 </div>
               </div>
 
@@ -514,8 +515,10 @@
               <p>
                 Уже пользуетесь нашими услугами? Напишите пару слов о своих впечатлениях. Мы рады справедливой критике и благодарности.
               </p>
-              <a class="content__reviews__send" href="#" data-toggle="modal" data-target="#reviewModal">оставить отзыв</a>
-              <a class="content__reviews__list" href="#">читать все отзывы</a>
+              <div>
+                <a class="content__reviews__send" href="#" data-toggle="modal" data-target="#reviewModal">оставить отзыв</a>
+                <a class="content__reviews__list" href="#">читать все отзывы</a>
+              </div>
             </div>
           </div>
 
@@ -546,6 +549,14 @@
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-12">
+              <!-- VK Widget -->
+              <div id="vk_groups"></div>
+              <script type="text/javascript">
+              VK.Widgets.Group("vk_groups", {mode: 3, width: "auto"}, 60852653);
+              </script>
             </div>
           </div>
         </div>

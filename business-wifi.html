@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/owl.theme.default.css">
   <link rel="stylesheet" href="assets/css/custom-carousel.css">
   <link rel="stylesheet" href="assets/css/custom.css">
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?146"></script>
 </head>
 <body>
   <div class="sign-in-shade">
@@ -144,13 +145,15 @@
             <button type="submit">проверить адрес</button>
           </form>
           <div class="content__address-check__success">
-            <div>
-              <div>
+            <div class="content__address-check__round-wrapper">
+              <div class="content__address-check__round">
+              </div>
+              <div class="content__address-check__sign-wrapper">
                 <img src="assets/images/address-success.svg">
               </div>
             </div>
             <br class="visible-xs-block">
-            <div>
+            <div class="content__address-check__complete-text">
               <h2>Хорошие новости! Мы можем вас подключить</h2>
               <p>
                 Выберите тариф &ndash; и в течение 3-х рабочих дней вы сможете смотреть фильмы,
@@ -164,13 +167,15 @@
             </div>
           </div>
           <div class="content__address-check__missing">
-            <div>
-              <div>
+            <div class="content__address-check__round-wrapper">
+              <div class="content__address-check__round">
+              </div>
+              <div class="content__address-check__sign-wrapper">
                 <img src="assets/images/address-missing.svg">
               </div>
             </div>
             <br class="visible-xs-block">
-            <div>
+            <div class="content__address-check__complete-text">
               <h2>Ваш дом пока не подключен</h2>
               <p>
                 Для подключения требуется ещё 10 заявок. Оставьте заявку – мы свяжемся, как только
@@ -188,12 +193,6 @@
       </div>
 
       <div class="content__big-wrapper row">
-
-        <div class="content__light-shadow">
-          <h3>
-            Чтобы выбрать тариф,<br>сначала проверьте адрес
-          </h3>
-        </div>
 
         <div class="col-sm-12 col-md-8 content__left-block">
         
@@ -449,8 +448,10 @@
               <p>
                 Уже пользуетесь нашими услугами? Напишите пару слов о своих впечатлениях. Мы рады справедливой критике и благодарности.
               </p>
-              <a class="content__reviews__send" href="#" data-toggle="modal" data-target="#reviewModal">оставить отзыв</a>
-              <a class="content__reviews__list" href="#">читать все отзывы</a>
+              <div>
+                <a class="content__reviews__send" href="#" data-toggle="modal" data-target="#reviewModal">оставить отзыв</a>
+                <a class="content__reviews__list" href="#">читать все отзывы</a>
+              </div>
             </div>
           </div>
 
@@ -481,6 +482,14 @@
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-12">
+              <!-- VK Widget -->
+              <div id="vk_groups"></div>
+              <script type="text/javascript">
+              VK.Widgets.Group("vk_groups", {mode: 3, width: "auto"}, 60852653);
+              </script>
             </div>
           </div>
         </div>
