@@ -2154,12 +2154,10 @@ select:-webkit-autofill:focus {
     .content__order input, .content__order .select {
       width: 90%;
       margin: 0 auto;
-      display: flex;
-      text-align: center; }
+      display: flex; }
     .content__order label {
       width: 100%;
-      text-align: center;
-      margin-left: 0; }
+      margin-left: 30px; }
     .content__order__form.row {
       width: 90%;
       margin: 0 auto; }
@@ -2167,6 +2165,8 @@ select:-webkit-autofill:focus {
       margin-top: 40px !important;
       margin-bottom: 0 !important; }
     .content__order__form__submit {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
       margin-top: 30px;
       text-align: center; }
       .content__order__form__submit input[type=checkbox]:not(checked) + label:before {
@@ -2671,6 +2671,8 @@ select:-webkit-autofill:focus {
       position: static; }
     .content__map p {
       padding: 17px; }
+  .content__contacts .nav-tabs {
+    text-align: left !important; }
   .content__contacts > p {
     width: 150px;
     top: 0; }
@@ -2783,8 +2785,7 @@ select:-webkit-autofill:focus {
     width: 25%; }
   .content__advantages_medium > .row > div {
     padding-left: 15px;
-    padding-right: 15px;
-    text-align: center; }
+    padding-right: 15px; }
     .content__advantages_medium > .row > div p {
       width: 100%; }
     .content__advantages_medium > .row > div.clearfix {
@@ -2797,7 +2798,8 @@ select:-webkit-autofill:focus {
   .content__advantages_small__img {
     padding-top: 30px; }
   .content__advantages_small > h4 {
-    padding: 20px 0; }
+    padding: 20px 0;
+    text-align: center; }
   .content__advantages_small > p {
     margin: 0 15px 10px; }
   .content__gray-brickets__item a {
@@ -2813,83 +2815,83 @@ select:-webkit-autofill:focus {
     justify-content: space-around; }
   .content__banner-trio .col-sm-12 {
     height: 80px; }
-  .content__tariffs {
-    padding: 0 10px; }
-    .content__tariffs__item {
-      height: auto;
-      margin-bottom: 15px; }
-      .content__tariffs__item:before {
-        background: rgba(34, 35, 40, 0.7); }
-      .content__tariffs__item__background {
-        top: 0;
-        transform: translateY(0%);
+  .content__tariffs__item {
+    height: auto;
+    margin-bottom: 15px; }
+    .content__tariffs__item:before {
+      background: rgba(34, 35, 40, 0.7); }
+    .content__tariffs__item__background {
+      top: 0;
+      transform: translateY(0%);
+      left: 50%;
+      transform: translateX(-50%);
+      width: auto;
+      height: 100%; }
+    .content__tariffs__item form {
+      position: relative;
+      z-index: 2; }
+    .content__tariffs__item__left-side {
+      position: static;
+      padding: 30px 0 0;
+      margin-bottom: 130px;
+      width: 100%;
+      max-width: none;
+      height: auto; }
+      .content__tariffs__item__left-side h4 {
+        text-align: center;
+        font-size: 1.8em;
+        margin: 0; }
+      .content__tariffs__item__left-side label {
+        font-size: 1.1em; }
+      .content__tariffs__item__left-side > div {
+        padding: 90px 37px 0;
+        width: 100%;
+        position: static; }
+        .content__tariffs__item__left-side > div > div {
+          margin: 0 0 15px; }
+      .content__tariffs__item__left-side p {
+        width: 70%;
+        padding: 0;
+        font-size: 1.1em; }
+    .content__tariffs__item .content__tariffs__item__speed img {
+      margin-top: 5px;
+      width: 45px;
+      margin-right: 20px; }
+    .content__tariffs__item .content__tariffs__item__speed p {
+      width: 70%; }
+    .content__tariffs__item__right-side {
+      position: absolute;
+      width: 100%;
+      max-width: none;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      padding-top: 80px; }
+      .content__tariffs__item__right-side h5 {
+        font-size: 1.1em;
+        letter-spacing: 1px; }
+      .content__tariffs__item__right-side p {
+        text-align: center;
+        float: unset;
+        margin: 0 auto; }
+      .content__tariffs__item__right-side > div > div {
         left: 50%;
         transform: translateX(-50%);
-        width: auto;
-        height: 100%; }
-      .content__tariffs__item form {
-        position: relative;
-        z-index: 2; }
-      .content__tariffs__item__left-side {
-        position: static;
-        padding: 30px 0 0;
-        margin-bottom: 130px;
-        width: 100%;
-        max-width: none;
-        height: auto; }
-        .content__tariffs__item__left-side h4 {
-          text-align: center;
-          font-size: 1.8em;
-          margin: 0; }
-        .content__tariffs__item__left-side label {
-          font-size: 1.1em; }
-        .content__tariffs__item__left-side > div {
-          padding: 90px 37px 0;
-          width: 100%;
-          position: static; }
-          .content__tariffs__item__left-side > div > div {
-            margin: 0 0 15px; }
-        .content__tariffs__item__left-side p {
-          width: 70%;
-          padding: 0;
-          font-size: 1.1em; }
-      .content__tariffs__item .content__tariffs__item__speed img {
-        margin-top: 5px;
-        width: 45px;
-        margin-right: 20px; }
-      .content__tariffs__item .content__tariffs__item__speed p {
-        width: 70%; }
-      .content__tariffs__item__right-side {
-        position: absolute;
-        width: 100%;
-        max-width: none;
-        left: 0;
-        top: 0;
-        z-index: -1;
-        padding-top: 80px; }
-        .content__tariffs__item__right-side h5 {
-          font-size: 1.1em;
-          letter-spacing: 1px; }
-        .content__tariffs__item__right-side p {
-          text-align: center;
-          float: unset;
-          margin: 0 auto; }
-        .content__tariffs__item__right-side > div > div {
-          left: 50%;
-          transform: translateX(-50%);
-          bottom: 10px; }
-          .content__tariffs__item__right-side > div > div > div {
-            margin: 0 0 20px 0; }
-        .content__tariffs__item__right-side button {
-          padding: 10px 40px; }
-          .content__tariffs__item__right-side button:hover, .content__tariffs__item__right-side button:focus {
-            padding: 11px 41px; }
-      .content__tariffs__item__price {
-        font-size: 3em; }
-        .content__tariffs__item__price-currency {
-          line-height: 1.4em; }
+        bottom: 10px; }
+        .content__tariffs__item__right-side > div > div > div {
+          margin: 0 0 20px 0; }
+      .content__tariffs__item__right-side button {
+        padding: 10px 40px; }
+        .content__tariffs__item__right-side button:hover, .content__tariffs__item__right-side button:focus {
+          padding: 11px 41px; }
+    .content__tariffs__item__price {
+      font-size: 3em; }
+      .content__tariffs__item__price-currency {
+        line-height: 1.4em; }
   .content__reviews {
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+  .content__promo-list > hr {
+    margin-top: 5px; } }
 
 @media (max-width: 359px) {
   header .navbar-collapse ul li a {

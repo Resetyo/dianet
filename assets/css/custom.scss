@@ -2765,12 +2765,10 @@ select:-webkit-autofill:focus {
         width: 90%;
         margin: 0 auto;
         display: flex;
-        text-align: center;
       }
       label {
         width: 100%;
-        text-align: center;
-        margin-left: 0;
+        margin-left: 30px;
       }
       &__form {
         &.row {
@@ -2782,6 +2780,8 @@ select:-webkit-autofill:focus {
           margin-bottom: 0 !important;
         }
         &__submit {
+          padding-left: 15px !important;
+          padding-right: 15px !important;
           margin-top: 30px;
           text-align: center;
           input[type=checkbox] {
@@ -3517,6 +3517,9 @@ select:-webkit-autofill:focus {
     }
 
     &__contacts {
+      .nav-tabs {
+        text-align: left !important;
+      }
       & > p {
         width: 150px;
         top: 0;
@@ -3681,7 +3684,6 @@ select:-webkit-autofill:focus {
       & > .row > div {
         padding-left:15px;
         padding-right: 15px;
-        text-align: center;
         p {
           width: 100%;
         }
@@ -3704,6 +3706,7 @@ select:-webkit-autofill:focus {
       }
       & > h4 {
         padding: 20px 0;
+        text-align: center;
       }
       & > p {
         margin: 0 15px 10px;
@@ -3743,7 +3746,6 @@ select:-webkit-autofill:focus {
     }
 
     &__tariffs {
-      padding: 0 10px;
       &__item {
         height: auto;
         margin-bottom: 15px;
@@ -3844,6 +3846,12 @@ select:-webkit-autofill:focus {
 
     &__reviews {
       margin-bottom: 40px;
+    }
+
+    &__promo-list {
+      & > hr {
+        margin-top: 5px;
+      }
     }
   }
 }
