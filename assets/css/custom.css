@@ -106,7 +106,8 @@ select:-webkit-autofill:focus {
   z-index: 2;
   background: none;
   color: #fff;
-  outline: none; }
+  outline: none;
+  display: inline-block; }
   .orange-button:before {
     background: linear-gradient(60deg, #ef6c00 0%, #fbb03b 100%);
     transition: opacity 0.3s;
@@ -1186,7 +1187,8 @@ select:-webkit-autofill:focus {
       display: inline-block;
       width: 80%;
       font-size: 1em;
-      letter-spacing: -0.8px; }
+      letter-spacing: -0.8px;
+      cursor: pointer; }
     .content__order__form__submit button {
       margin-top: 3vw;
       vertical-align: top;
@@ -1655,6 +1657,7 @@ select:-webkit-autofill:focus {
       .content__address-check__success .content__address-check__sign-wrapper, .content__address-check__missing .content__address-check__sign-wrapper {
         position: absolute;
         top: 2.4vw;
+        left: 0;
         overflow: hidden;
         width: 0%;
         transition: width 0.8s 0.2s; }
@@ -1710,7 +1713,6 @@ select:-webkit-autofill:focus {
         position: relative;
         background: none;
         border: none;
-        height: 100%;
         padding: 12px 38px;
         border-radius: 30px;
         text-transform: uppercase;
@@ -2891,7 +2893,10 @@ select:-webkit-autofill:focus {
   .content__reviews {
     margin-bottom: 40px; }
   .content__promo-list > hr {
-    margin-top: 5px; } }
+    margin-top: 5px; }
+  .content .mobile-reviews-carousel .owl-item .reviews-text {
+    max-height: 280px;
+    overflow: hidden; } }
 
 @media (max-width: 359px) {
   header .navbar-collapse ul li a {

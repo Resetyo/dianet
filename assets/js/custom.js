@@ -52,6 +52,14 @@ $(document).ready(function(){
         });
     });
 
+    //order compliance
+    $('.content__order__form__submit label').click(function(){
+        if(!$(this).prev('input').get(0).checked){
+            var link = "http://dian.ostorodonodor.lclients.ru/compliance.html";
+            window.open(link);
+        }
+    });
+
     //change address button
     $('#orderModal').on('show.bs.modal', function(){
         $(this).find('.modal-footer button').click(function(e){
@@ -227,7 +235,7 @@ $(document).ready(function(){
 
     //tariff background blur
     $('.content__tariffs__item').mouseover(function(){
-        $(this).find('.content__tariffs__item__background').css({'filter': 'blur(3px)'});
+        $(this).find('.content__tariffs__item__background').css({'filter': 'blur(5px)'});
     });
     $('.content__tariffs__item').mouseout(function(){
         $(this).find('.content__tariffs__item__background').css({'filter': 'blur(0px)'});
