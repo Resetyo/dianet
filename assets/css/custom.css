@@ -305,6 +305,9 @@ select:-webkit-autofill:focus {
   padding: 0;
   list-style: none; }
   .select-options li {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
     margin: 0;
     padding: 12px 0;
     text-indent: 15px;
@@ -1746,6 +1749,8 @@ select:-webkit-autofill:focus {
           z-index: -1; }
         .content__address-check form button:hover:after, .content__address-check form button:focus:after {
           opacity: 1; }
+      .content__address-check form input {
+        padding-left: 15px; }
     .content__address-check label {
       color: #fff;
       opacity: 0.5; }

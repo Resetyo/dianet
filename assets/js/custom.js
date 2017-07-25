@@ -179,8 +179,11 @@ $(document).ready(function(){
         }
     });
 
-    //address-ckeck custom city select
+    //address-check custom city select
     custom_select();
+
+    //address-check custom street autocomplete
+    custom_autocomplete();
 
     //tariff info button
     $(document).mouseup(function (e) {
@@ -580,4 +583,44 @@ function custom_select() {
         }
     });
     
+}
+
+function custom_autocomplete() {
+    $('.custom-autocomplete').each(function(){
+        var $input = $(this);
+        var $list = $('<ul />', {
+            'class': 'select-options'
+        }).insertAfter($input);
+
+        $input.keyup(function(e){
+            setTimeout(function(){
+                var city = $('.select-styled > div').text();
+                var query = $input.val();
+                $.ajax({
+                    type: "POST",
+                    url: '',
+                    data: {city: city, query: query},
+                    success: function(data) {
+                        $list.html("");
+                        for (var i = 0; i < data.length; i++) {
+                            $('<li />', {
+                                text: data[i]
+                            }).appendTo($list);
+                        }
+                        $list.show();
+                    }
+                });
+            },200);
+        });
+
+        $list.on('click', 'li', function(e) {
+            e.stopPropagation();
+            $input.val($(this).text());
+            $list.hide();
+        });
+
+        $(document).click(function() {
+            $list.hide();
+        });
+    });
 }
