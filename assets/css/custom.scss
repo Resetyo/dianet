@@ -540,6 +540,19 @@ select:-webkit-autofill:focus {
   }
 }
 
+#reviewModal {
+  .modal-header h5 {
+    margin-top: 60px;
+    font-size: 2.5em;
+  }
+  .form-group {
+    margin-bottom: 25px;
+  }
+  .modal-body {
+    padding-top: 20px;
+  }
+}
+
 
 .content {
   flex: 1 0 auto;

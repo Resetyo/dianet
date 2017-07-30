@@ -420,6 +420,16 @@ select:-webkit-autofill:focus {
     box-shadow: none;
     border-color: white; }
 
+#reviewModal .modal-header h5 {
+  margin-top: 60px;
+  font-size: 2.5em; }
+
+#reviewModal .form-group {
+  margin-bottom: 25px; }
+
+#reviewModal .modal-body {
+  padding-top: 20px; }
+
 .content {
   flex: 1 0 auto;
   padding-top: 127px;
