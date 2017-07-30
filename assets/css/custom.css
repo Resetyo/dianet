@@ -687,7 +687,6 @@ select:-webkit-autofill:focus {
     .content__brickets .row > div {
       margin-bottom: 30px;
       position: relative;
-      overflow: hidden;
       height: 23vw; }
     .content__brickets .row .content__brickets__internet {
       background: linear-gradient(60deg, #ef6c00 0%, #fbb03b 100%);
