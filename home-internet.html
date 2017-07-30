@@ -19,11 +19,11 @@
     <form action="" class="-visor-no-click live-labels">
       <h2>вход</h2>
       <div class="form-group">
-        <label for="card_number">Номер карточки:</label>
+        <label class="label" for="card_number">Номер карточки:</label>
         <input class="form-control" id="card_number" type="text" name="card_number" required>
       </div>
       <div class="form-group">
-        <label for="access_code">Код доступа к системе:</label>
+        <label class="label" for="access_code">Код доступа к системе:</label>
         <input class="form-control" id="access_code" type="text" name="access_code" required>
       </div>
       <button type="submit" class="orange-button">Войти</button>
@@ -126,7 +126,7 @@
           <h2>Проверьте, работает ли &laquo;Дианэт&raquo; по вашему адресу?</h2>
           <form action="" class="-visor-no-click live-labels" method="post">
             <div>
-              <label for="city">город</label>
+              <label class="label" for="city">город</label>
               <select name="city" id="city" required>
                 <option selected disabled hidden style='display: none' value=''></option>
                 <option value="1">Барнаул</option>
@@ -135,12 +135,12 @@
               </select>
             </div>
             <div>
-              <label for="street">улица</label>
-              <input type="text" name="street" id="street" class="custom-autocomplete" autocomplete="off" required>
+              <label class="label" for="street">улица</label>
+              <input type="text" name="street" id="street" class="custom-autocomplete w-100" autocomplete="off" required>
             </div>
             <div>
-              <label for="house">дом</label>
-              <input type="text" name="house" id="house" required>
+              <label class="label" for="house">дом</label>
+              <input type="text" name="house" id="house" class="w-100" required>
             </div>
             <button type="submit">проверить адрес</button>
           </form>
@@ -596,11 +596,11 @@
         <form action="" class="-visor-no-click live-labels">
           <div class="modal-body">
             <div class="form-group">
-              <label for="name">Имя:</label>
+              <label class="label" for="name">Имя:</label>
               <input class="form-control" id="name" type="text" name="name" required>
             </div>
             <div class="form-group">
-              <label for="phone">Телефон:</label>
+              <label class="label" for="phone">Телефон:</label>
               <input class="form-control" id="phone" type="text" name="phone" required>
             </div>
           </div>
@@ -625,15 +625,15 @@
         <form action="" class="-visor-no-click live-labels">
           <div class="modal-body">
             <div class="form-group">
-              <label for="review_name">Имя:</label>
+              <label class="label" for="review_name">Имя:</label>
               <input class="form-control" id="review_name" type="text" name="review_name" required>
             </div>
             <div class="form-group">
-              <label for="review_position">Должность:</label>
+              <label class="label" for="review_position">Должность:</label>
               <input class="form-control" id="review_position" type="text" name="review_position">
             </div>
             <div class="form-group">
-              <label for="review_text">Отзыв:</label>
+              <label class="label" for="review_text">Отзыв:</label>
               <input class="form-control" id="review_text" type="text" name="review_text" required>
             </div>
           </div>

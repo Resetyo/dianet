@@ -92,7 +92,7 @@ p {
   line-height: 1.5em;
 }
 
-label {
+.label {
   text-transform: uppercase;
   color: $grayLight;
   font: 0.9em 'Raleway', sans-serif;
@@ -110,8 +110,11 @@ button {
   outline: none !important;
 }
 
-input:not([type=checkbox]), .select {
+.w-100 {
   width: 100%;
+}
+
+input:not([type=checkbox]), .select {
   background: none;
   border: none;
   border-bottom: 1px solid #fff;
