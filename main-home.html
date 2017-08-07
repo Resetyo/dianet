@@ -29,7 +29,7 @@
     </form>
   </div>
 
-  <div class="wrapper">
+  <div class="wrapper main_page">
     <header>
       <div class="main-menu">
         <div class="logo"><img src="assets/images/logo.svg" alt="Дианэт"></div>
@@ -56,8 +56,11 @@
         </div>
         <div class="main-menu__profile">
           <a href="#">
-            <img src="assets/images/user1.png" alt="Пользователь Дианэт">
-            <span>Алексей Понамарёв</span>
+            <span class="main-menu__profile__bill">
+              Номер счёта 
+              <span class="bill-number">456009</span>
+            </span>
+            <span class="user-name">Алексей Понамарёв</span>
           </a>
         </div>
       </div>
@@ -84,7 +87,7 @@
             </button>
             <div class="main-menu__profile">
               <a href="#">
-                <img src="assets/images/user1.png" alt="Пользователь Дианэт">
+                <span class="user-name">Алексей Понамарёв</span>
               </a>
             </div>
           </div>
@@ -135,12 +138,15 @@
         <div class="main-home-carousel custom-carousel_blur">
           <div class="custom-carousel__items">
             <div class="item">
-              <img class="item-background" src="assets/images/main-home-carousel1.jpg">
-              <h2>Твой город. Твой Интернет.</h2>
-              <div class="main-home-carousel__indent"></div>
-              <p>
-                Предъяви листовку и получи третий месяц в подарок!
-              </p>
+              <div class="item-body">
+                <img class="item-background" src="assets/images/main-home-carousel1.jpg">
+                <h2>Твой город. Твой Интернет.</h2>
+                <div class="main-home-carousel__indent"></div>
+                <p>
+                  Предъяви листовку и получи третий месяц в подарок!
+                </p>
+                
+              </div>
               <div class="main-home-carousel__stock">
                 <div class="main-home-carousel__stock__wrapper">
                   <img src="assets/images/v.svg">

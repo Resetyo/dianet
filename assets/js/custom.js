@@ -52,6 +52,35 @@ $(document).ready(function(){
         });
     });
 
+    //list down button
+    var main_page = $('.main_page');
+    if(main_page.length > 0) {
+        var arrow = '<img src="assets/images/btn_list.svg">';
+        var list_btn_content = mq1.matches ? (arrow + ' Листать вниз') : arrow;
+        var list_btn = $('<span />', {
+                class: 'list_btn',
+                html: list_btn_content
+            }).css({'opacity': '0'}).insertAfter(main_page);
+
+        var header = $('.nav-menu').height();
+        var footer = $('.footer').height();
+        var screen, scroll, scroll_to, full_height;
+        list_btn.click(function(){
+            screen = $(window).height();
+            scroll = $(window).scrollTop();
+            scroll_to = scroll + screen - header;
+            $('html, body').animate({scrollTop:scroll_to},'50');
+        });
+        $(window).scroll(function() {
+            full_height = $( document ).height();
+            screen = $(window).height();
+            scroll = $(window).scrollTop();
+            if((full_height - screen) < (scroll + footer)) {
+                list_btn.hide();
+            }
+        });
+    }
+
     //order compliance
     $('.content__order__form__submit label').click(function(){
         if(!$(this).prev('input').get(0).checked){
@@ -314,6 +343,10 @@ function WidthChange(mql) {
     var mlcarousel = $(".mobile-license-carousel");
     var mrcarousel = $(".mobile-reviews-carousel");
     var rb = $('.content__right-block');
+        
+    var arrow = '<img src="assets/images/btn_list.svg">';
+    var list_btn_content = mq1.matches ? (arrow + ' Листать вниз') : arrow;
+    $('.list_btn').html(list_btn_content);
 
     if (mq.matches) {
     //animation
@@ -525,9 +558,14 @@ function custom_select() {
         }).insertAfter($styledSelect);
       
         for (var i = 0; i < numberOfOptions; i++) {
+            var option = $this.children('option').eq(i);
+            if ($this.val() == option.val()) {
+                $styledSelect.children('div').text(option.text());
+                $("#link-dropdown"+(i+1)).tab('show');
+            }
             $('<li />', {
-                text: $this.children('option').eq(i).text(),
-                rel: $this.children('option').eq(i).val()
+                text: option.text(),
+                rel: option.val()
             }).appendTo($list);
         }
 

@@ -56,6 +56,30 @@ button {
 .w-100 {
   width: 100%; }
 
+@keyframes show {
+  to {
+    opacity: 0.85; } }
+
+@keyframes swing {
+  from, to {
+    opacity: 0.85; }
+  50% {
+    bottom: 4vw; } }
+
+.list_btn {
+  position: fixed;
+  bottom: 3vw;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: show 1s forwards, swing 1.5s ease 2s infinite;
+  padding: 12px 17px;
+  background: #eff0f4;
+  border-radius: 30px;
+  z-index: 5;
+  cursor: pointer; }
+  .list_btn:hover {
+    animation: show 1s forwards; }
+
 input:not([type=checkbox]), .select {
   background: none;
   border: none;
@@ -181,19 +205,23 @@ select:-webkit-autofill:focus {
   .main-menu__profile {
     flex-grow: 2.5;
     letter-spacing: normal;
-    position: relative;
-    bottom: -10px; }
+    position: relative; }
     .main-menu__profile a {
       display: flex;
       align-items: center;
-      justify-content: center; }
-      .main-menu__profile a span {
-        margin-left: 10px;
+      justify-content: center;
+      flex-direction: column; }
+      .main-menu__profile a .user-name {
         text-decoration: none;
         border-bottom: 1px dashed #4f5362;
         font-family: 'Open Sans', sans-serif;
         text-transform: none;
         font-weight: normal; }
+    .main-menu__profile__bill {
+      color: #b8b7bc;
+      text-transform: none;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: normal; }
   .main-menu__signin a span {
     margin-left: 20px;
     border: none;
@@ -1858,14 +1886,21 @@ select:-webkit-autofill:focus {
     display: none; }
   .main-menu__profile {
     float: right;
-    padding: 9px 10px;
-    bottom: 0; }
+    padding: 15px 20px; }
+    .main-menu__profile .user-name {
+      color: #b8b7bc;
+      font-size: 1.2em;
+      padding-bottom: 1px;
+      border-color: #b8b7bc !important; }
   .navbar {
     display: block; }
     .navbar-toggle {
       float: left;
       margin-left: 15px;
       padding: 9px 10px; }
+  .list_btn {
+    bottom: 20px;
+    padding: 15px; }
   .modal-dialog {
     margin: 70px auto; }
   .modal-header {
@@ -1930,9 +1965,6 @@ select:-webkit-autofill:focus {
           font-size: 1.6em;
           font-weight: normal;
           letter-spacing: -1px; }
-    header .main-menu__profile img {
-      border-radius: 30px;
-      border: 1px solid #F99838; }
     header .main-menu__signin img {
       border: none;
       border-radius: 0; }
@@ -2576,8 +2608,14 @@ select:-webkit-autofill:focus {
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(41, 22, 0, 0.2);
         z-index: 1; }
+      .content .main-home-carousel .item-body {
+        position: static !important;
+        display: table;
+        padding: 1.5vw 2vw;
+        background: rgba(34, 35, 40, 0.35);
+        border-radius: 15px;
+        margin-top: 4vw; }
       .content .main-home-carousel .item-background {
         position: absolute;
         top: 50%;
@@ -2589,14 +2627,14 @@ select:-webkit-autofill:focus {
         transition: filter 0.2s; }
       .content .main-home-carousel .item h2 {
         color: #fff;
-        margin-top: 3vw;
+        margin-top: 0;
         margin-bottom: 30px;
         font-size: 3em;
         font-weight: bold;
         font-family: 'Raleway', sans-serif; }
       .content .main-home-carousel .item p {
         color: #fff;
-        display: inline-block;
+        display: inline;
         font-size: 1.4em;
         width: 45vw;
         letter-spacing: -1px; }
