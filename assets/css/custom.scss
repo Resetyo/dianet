@@ -232,10 +232,11 @@ select:-webkit-autofill:focus {
   position: absolute;
   z-index: 1;
   top: 0;
-  &-contacts {
-    height: 33vw;
-    border-radius: 15px;
-  }
+}
+
+div[id^='google-map-contacts-'] {
+  height: 33vw;
+  border-radius: 15px;
 }
 
 .main-menu {

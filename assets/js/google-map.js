@@ -204,25 +204,39 @@ function initMap() {
   }
 
   //contacts map
-  var map_contacts = document.getElementById('google-map-contacts');
-  if(map_contacts){
-    var geocoder = new google.maps.Geocoder();
-    var map_contacts = new google.maps.Map(map_contacts, {
-      zoom: 17,
-      center: {lat: 53.332262, lng: 83.775992},
-      disableDefaultUI: true
-    });
-    var address = document.getElementById('contact-address').textContent;
-    geocoder.geocode( { 'address': address}, function(results, status) {
-      if (status == 'OK') {
-        map_contacts.setCenter(results[0].geometry.location);
-        var marker = new google.maps.Marker({
-            map: map_contacts,
-            position: results[0].geometry.location
-        });
-      } else {
-        alert('Geocode was not successful for the following reason: ' + status);
-      }
+  var position, maps = $("[id^='google-map-contacts-']");
+  map_contacts = [];
+  if(maps.length > 0){
+    maps.each(function(index, map){
+      position = $(map).text().split(',');
+      $(map).data('lat', position[0]);
+      $(map).data('lng', position[1]);
+      $(map).data('index', index);
+      position = new google.maps.LatLng(position[0], position[1]);
+      map_contacts[index] = new google.maps.Map(map, {
+        zoom: 17,
+        disableDefaultUI: true,
+        center: position
+      });
+      var marker = new google.maps.Marker({
+          map: map_contacts[index],
+          position: position
+      });
     });
   }
 }
+
+$(document).ready(function(){
+  if($('.content__contacts').length > 0){
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+      var tab = $('#'+$(e.target).attr('aria-controls'));
+      var map = tab.find("[id^='google-map-contacts-']");
+      if (map.length > 0) {
+        map = map[0];
+        google.maps.event.trigger(map, 'resize');
+        var position = new google.maps.LatLng($(map).data('lat'), $(map).data('lng'));
+        map_contacts[$(map).data('index')].setCenter(position);
+      }
+    });
+  }
+});
