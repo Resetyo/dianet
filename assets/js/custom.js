@@ -72,6 +72,7 @@ $(document).ready(function(){
             $('html, body').animate({scrollTop:scroll_to},'50');
         });
         $(window).scroll(function() {
+            list_btn.css({'animation-play-state': 'paused'});
             full_height = $( document ).height();
             screen = $(window).height();
             scroll = $(window).scrollTop();
@@ -449,14 +450,12 @@ function WidthChange(mql) {
 
     //gray bricket partner read more animation
     $('.content__gray-brickets__partner').mouseover(function(){
-        $(this).find('.content__gray-brickets__partner__bw-label').css({'opacity': '0'});
         var read_more = $(this).find('.content__gray-brickets__partner__read-more');
         if(read_more.length > 0){
             read_more.css({'opacity': '1'});
         }
     });
     $('.content__gray-brickets__partner').mouseout(function(){
-        $(this).find('.content__gray-brickets__partner__bw-label').css({'opacity': '1'});
         var read_more = $(this).find('.content__gray-brickets__partner__read-more');
         if(read_more.length > 0){
             read_more.css({'opacity': '0'});

@@ -163,7 +163,7 @@ function initMap() {
  
   if (matchMedia) {
     var mq = window.matchMedia("(min-width: 1024px)");
-    var zoom;
+    var zoom, lng;
     mq.addListener(WidthChange2);
     WidthChange2(mq);
     function WidthChange2(){
@@ -180,6 +180,7 @@ function initMap() {
   if(map) {
     var map = new google.maps.Map(map, {
       zoom: zoom,
+      max_zoom: 9,
       center: {lat: 53.512077, lng: lng},
       disableDefaultUI: true,
       styles: styleArray,

@@ -134,8 +134,10 @@ button {
   border-radius: 30px;
   z-index: 5;
   cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
   &:hover {
-    animation: show 1s forwards;
+    animation-play-state: paused;
   }
 }
 
@@ -305,14 +307,19 @@ div[id^='google-map-contacts-'] {
       text-transform: none;
       font-family: 'Open Sans', sans-serif;
       font-weight: normal;
+      margin-bottom: 7px;
     }
   }
-  &__signin a span {
-    margin-left: 20px;
-    border: none;
-    text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    color: $grayLight;
+  &__signin a {
+    flex-direction: row;
+    align-items: end;
+    span {
+      margin-left: 20px;
+      border: none;
+      text-transform: uppercase;
+      font-family: 'Raleway', sans-serif;
+      color: $grayLight;
+    }
   }
 }
 
@@ -1084,19 +1091,19 @@ div[id^='google-map-contacts-'] {
       height: 13vw;
       margin-bottom: 15px;  
       position: relative;
+      filter: grayscale(100%) brightness(150%);
+      &:hover {
+        filter: grayscale(0%) brightness(100%);
+      }
       & > a {
         display: block;
         height: 100%;
       }
-      &__bw-label, &__c-label {
+      &__c-label {
         position: absolute;
-        z-index: -1;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
-      &__bw-label {
-        z-index: 1;
       }
       &__read-more {
         position: absolute;
