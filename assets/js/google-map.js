@@ -180,7 +180,7 @@ function initMap() {
   if(map) {
     var map = new google.maps.Map(map, {
       zoom: zoom,
-      max_zoom: 9,
+      gestureHandling: 'greedy',
       center: {lat: 53.512077, lng: lng},
       disableDefaultUI: true,
       styles: styleArray,

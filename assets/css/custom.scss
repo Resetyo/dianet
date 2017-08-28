@@ -3328,7 +3328,7 @@ div[id^='google-map-contacts-'] {
       h2 {
         text-align: center;
       }
-      margin: 145px auto 0;
+      margin: 80px auto 0;
       input {
         width: 90%;
         margin: 0 auto; 
@@ -3339,6 +3339,9 @@ div[id^='google-map-contacts-'] {
           padding: 16px 26px;
         }
       }
+    }
+    .close {
+      top: 20px;
     }
   }
 

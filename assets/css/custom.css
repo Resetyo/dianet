@@ -2552,7 +2552,7 @@ div[id^='google-map-contacts-'] {
     margin: 30px auto;
     text-align: center; }
   .sign-in-shade form {
-    margin: 145px auto 0; }
+    margin: 80px auto 0; }
     .sign-in-shade form h2 {
       text-align: center; }
     .sign-in-shade form input {
@@ -2562,6 +2562,8 @@ div[id^='google-map-contacts-'] {
       padding: 15px 25px; }
       .sign-in-shade form button:hover, .sign-in-shade form button:focus, .sign-in-shade form button:active {
         padding: 16px 26px; }
+  .sign-in-shade .close {
+    top: 20px; }
   .content__manager {
     height: 260px; }
     .content__manager__img {
