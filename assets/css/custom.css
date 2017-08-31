@@ -259,7 +259,8 @@ div[id^='google-map-contacts-'] {
     width: 100%;
     background-color: #FFF;
     z-index: 10;
-    border: none; }
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
 
 .start-page {
   position: relative;
@@ -930,7 +931,9 @@ div[id^='google-map-contacts-'] {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+      max-width: 150px;
+      max-height: 100px; }
     .content__gray-brickets__partner__read-more {
       position: absolute;
       bottom: 2vw;
@@ -1183,6 +1186,8 @@ div[id^='google-map-contacts-'] {
         text-transform: uppercase;
         font: bold 0.75em/1em 'Raleway', sans-serif;
         letter-spacing: 1px; }
+  .content__order .select-options li {
+    color: #4f5362; }
   .content__order h3 {
     font-size: 1.5em;
     margin: 0; }
@@ -1204,13 +1209,15 @@ div[id^='google-map-contacts-'] {
     padding-top: 3vw; }
     .content__order__form__submit input[type=checkbox]:not(checked) {
       position: absolute;
-      opacity: 0; }
+      opacity: 0;
+      width: 0; }
     .content__order__form__submit input[type=checkbox]:not(checked) + label {
       position: relative;
       padding: 0 0 0 40px;
-      top: 0;
+      top: -3px;
       left: 0;
-      margin-left: 0; }
+      margin-left: 0;
+      vertical-align: top; }
     .content__order__form__submit input[type=checkbox]:not(checked) + label:before {
       content: '';
       position: absolute;
@@ -1227,7 +1234,7 @@ div[id^='google-map-contacts-'] {
       line-height: 0.7em; }
     .content__order__form__submit input[type=checkbox]:focus + label:before {
       box-shadow: 0 0 0 3px rgba(200, 200, 200, 0.5); }
-    .content__order__form__submit label {
+    .content__order__form__submit u {
       color: #f99531;
       text-decoration: underline;
       text-transform: none;
@@ -2113,6 +2120,9 @@ div[id^='google-map-contacts-'] {
     .content__gray-brickets__partner {
       height: 100px;
       margin-bottom: 15px; }
+      .content__gray-brickets__partner__c-label {
+        max-width: 120px;
+        max-height: 80px; }
     .content__animation {
       height: 230px;
       max-height: none; }
@@ -2229,6 +2239,9 @@ div[id^='google-map-contacts-'] {
       .content__order__form__submit input[type=checkbox]:not(checked) + label:before {
         top: 2px; }
       .content__order__form__submit label {
+        text-align: left;
+        width: 0; }
+      .content__order__form__submit u {
         text-align: left; }
       .content__order__form__submit button {
         margin: 30px auto 10px;

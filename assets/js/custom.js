@@ -83,11 +83,9 @@ $(document).ready(function(){
     }
 
     //order compliance
-    $('.content__order__form__submit label').click(function(){
-        if(!$(this).prev('input').get(0).checked){
-            var link = "http://dian.ostorodonodor.lclients.ru/compliance.html";
-            window.open(link);
-        }
+    $('.content__order__form__submit u').click(function(){
+        var link = "http://dian.ostorodonodor.lclients.ru/compliance.html";
+        window.open(link);
     });
 
     //change address button
@@ -317,6 +315,11 @@ $(document).ready(function(){
         //phone mask
         $("#phone").mask('0 (000) 000-0000');
     });
+
+    //order phone mask
+    if ($("#order_phone").length > 0) {
+        $("#order_phone").mask('0 (000) 000-0000');
+    }
 });
 
 
