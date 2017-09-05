@@ -70,6 +70,7 @@ $(document).ready(function(){
             scroll = $(window).scrollTop();
             scroll_to = scroll + screen - header;
             $('html, body').animate({scrollTop:scroll_to},'50');
+            $(this).hide();
         });
         $(window).scroll(function() {
             list_btn.css({'animation-play-state': 'paused'});

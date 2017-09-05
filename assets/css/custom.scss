@@ -124,7 +124,7 @@ button {
 }
 
 .list_btn {
-  position: fixed;
+  position: absolute;
   bottom: 3vw;
   left: 50%;
   transform: translateX(-50%);
@@ -2347,8 +2347,11 @@ div[id^='google-map-contacts-'] {
     }
   }
   &__production {
-    width: 8vw;
+    width: 11vw;
     padding-right: 2.8%;
+    a {
+      color: $grayP;
+    }
   }
 }
 

@@ -67,7 +67,7 @@ button {
     bottom: 4vw; } }
 
 .list_btn {
-  position: fixed;
+  position: absolute;
   bottom: 3vw;
   left: 50%;
   transform: translateX(-50%);
@@ -1892,8 +1892,10 @@ div[id^='google-map-contacts-'] {
       .footer__phone span a {
         color: #6B6E77; }
   .footer__production {
-    width: 8vw;
+    width: 11vw;
     padding-right: 2.8%; }
+    .footer__production a {
+      color: #6B6E77; }
 
 @media (max-width: 1023px) {
   .main-menu, .nav-menu {
