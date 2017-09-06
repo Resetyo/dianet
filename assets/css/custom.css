@@ -264,7 +264,7 @@ div[id^='google-map-contacts-'] {
 
 .start-page {
   position: relative;
-  background: rgba(34, 35, 40, 0.35);
+  background: rgba(34, 35, 40, 0.5);
   width: 100%;
   height: 100%;
   margin: auto;
@@ -708,7 +708,7 @@ div[id^='google-map-contacts-'] {
     padding: 14% 16%;
     color: #fff;
     position: relative;
-    background: rgba(34, 35, 40, 0.35); }
+    background: rgba(34, 35, 40, 0.5); }
     .content__banner h2 {
       font-size: 4.5vw;
       letter-spacing: 2px;
@@ -1668,7 +1668,7 @@ textarea:-webkit-autofill:focus,
     transition: all 0.2s; }
   .content__address-check {
     margin-bottom: 5vw;
-    background: rgba(41, 22, 0, 0.2);
+    background: rgba(41, 22, 0, 0.5);
     position: relative;
     height: 25vw;
     padding: 4.3vw 2vw;
@@ -1773,9 +1773,9 @@ textarea:-webkit-autofill:focus,
       .content__address-check form > div {
         position: relative;
         margin: 0 1vw; }
-        .content__address-check form > div:nth-child(2) {
+        .content__address-check form > div:nth-child(4) {
           width: 29vw; }
-        .content__address-check form > div:nth-child(3) {
+        .content__address-check form > div:nth-child(5) {
           width: 8.4vw; }
       .content__address-check form button {
         position: relative;

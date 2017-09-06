@@ -357,7 +357,7 @@ div[id^='google-map-contacts-'] {
 
 .start-page {
   position: relative;
-  background: rgba(34, 35, 40, 0.35);
+  background: rgba(34, 35, 40, 0.5);
   width: 100%;
   height: 100%;
   margin: auto;
@@ -926,7 +926,7 @@ div[id^='google-map-contacts-'] {
     padding: 14% 16%;
     color: #fff;
     position: relative;
-    background: rgba(34, 35, 40, 0.35);
+    background: rgba(34, 35, 40, 0.5);
     h2 {
       font-size: 4.5vw;
       letter-spacing: 2px;
@@ -2180,10 +2180,10 @@ div[id^='google-map-contacts-'] {
       & > div {
         position: relative;
         margin: 0 1vw;
-        &:nth-child(2) {
+        &:nth-child(4) {
           width: 29vw;
         }
-        &:nth-child(3) {
+        &:nth-child(5) {
           width: 8.4vw;
         }
       }
@@ -2238,7 +2238,7 @@ div[id^='google-map-contacts-'] {
         padding-left: 15px;
       }
     }
-    background: rgba(41,22,0,0.2);
+    background: rgba(41,22,0,0.5);
     position: relative;
     height: 25vw;
     padding: 4.3vw 2vw;
