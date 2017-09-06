@@ -1309,6 +1309,18 @@ div[id^='google-map-contacts-'] {
           width: calc(75% - 2.2vw); }
       .content__order__tariff__total p {
         color: #fff; }
+  .content__order input:-webkit-autofill,
+  .content__order input:-webkit-autofill:hover,
+  .content__order input:-webkit-autofill:focus,
+  .content__order textarea:-webkit-autofill,
+  .content__order textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+  .content__order select:-webkit-autofill,
+  .content__order select:-webkit-autofill:hover,
+  .content__order select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #4f5362;
+    transition: background-color 5000s ease-in-out 0s !important;
+    -webkit-box-shadow: none !important; }
   .content__cctv_request {
     background-color: #222328;
     border-radius: 15px; }
