@@ -962,6 +962,9 @@ div[id^='google-map-contacts-'] {
     font-size: 0.8em; }
     .content__small-text-p ul {
       line-height: 2em; }
+    .content__small-text-p img {
+      max-width: 100%;
+      max-height: 100%; }
   .content__medium-text-p {
     margin: 2vw 2vw 4vw;
     font-size: 1em;
@@ -993,6 +996,9 @@ div[id^='google-map-contacts-'] {
       text-decoration: underline; }
       .content__medium-text-p a:hover, .content__medium-text-p a:focus {
         text-decoration: none; }
+    .content__medium-text-p img {
+      max-width: 100%;
+      max-height: 100%; }
   .content__animation {
     overflow: hidden;
     height: calc(300px + 15vw);
@@ -2923,12 +2929,13 @@ textarea:-webkit-autofill:focus,
       position: relative;
       z-index: 2; }
     .content__tariffs__item__left-side {
-      position: static;
+      position: relative;
       padding: 30px 0 0;
       margin-bottom: 130px;
       width: 100%;
       max-width: none;
-      height: auto; }
+      height: auto;
+      z-index: 2; }
       .content__tariffs__item__left-side h4 {
         text-align: center;
         font-size: 1.8em;
@@ -2957,7 +2964,7 @@ textarea:-webkit-autofill:focus,
       max-width: none;
       left: 0;
       top: 0;
-      z-index: -1;
+      z-index: 1;
       padding-top: 80px; }
       .content__tariffs__item__right-side h5 {
         font-size: 1.1em;
