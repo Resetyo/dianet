@@ -64,7 +64,7 @@ $(document).ready(function(){
 
         var header = $('.nav-menu').height();
         var footer = $('.footer').height();
-        var screen, scroll, scroll_to, full_height;
+        var screen, scroll, scroll_to, brickets;
         list_btn.click(function(){
             screen = $(window).height();
             scroll = $(window).scrollTop();
@@ -74,10 +74,10 @@ $(document).ready(function(){
         });
         $(window).scroll(function() {
             list_btn.css({'animation-play-state': 'paused'});
-            full_height = $( document ).height();
+            brickets = $('.content__brickets').offset()['top'];
             screen = $(window).height();
             scroll = $(window).scrollTop();
-            if((full_height - screen) < (scroll + footer)) {
+            if((scroll + screen) > brickets) {
                 list_btn.hide();
             }
         });
