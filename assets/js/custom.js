@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    //phone number to mobile menu
+    phone = $('.main-menu-phone-number').text();
+    $('.navbar-collapse-phone').attr('href','tel:' + phone).text(phone);
+
     //submit address check
     $('.content__address-check form').submit(function(e){
         $.ajax({
