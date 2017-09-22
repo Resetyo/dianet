@@ -531,7 +531,7 @@ div[id^='google-map-contacts-'] {
     text-align: left;
   }
   &-cross {
-    padding: 5px 11px;
+    padding: 5px 7px;
     border-radius:25px;
     background-color: #000;
     font-size: 30px;
@@ -565,7 +565,9 @@ div[id^='google-map-contacts-'] {
     line-height: 1.3;
     text-decoration: underline;
     display: inline-block;
-    transform: translateY(-70%);
+    width: 49%;
+    float: right;
+    transform: translateY(-20%);
     &:hover, &:focus, &:active {
       color: $grayBackground;
       text-decoration: none;
@@ -777,7 +779,7 @@ div[id^='google-map-contacts-'] {
         height: auto !important;
         margin: 0;
         top: 40px;
-        left: 14vw;
+        left: 14vw !important;
         bottom: 45px;
         position: absolute;
         width: 2px;
@@ -1991,13 +1993,19 @@ div[id^='google-map-contacts-'] {
           top: 50%;
           transform: translateY(-50%);
         }
+        .carousel-divider {
+          position: absolute;
+          left: 11vw;
+        }
         .carousel-text {
+          width: 95%;
           margin-top: 0;
           padding-left: 12vw;
           h4 {
             margin-top: 0;
             letter-spacing: 1px;
             font-size: 1em;
+            line-height: 1;
           }
         }
         .reviews-subheader {
@@ -2009,7 +2017,7 @@ div[id^='google-map-contacts-'] {
         .reviews-text {
           letter-spacing: -0.6px;
           color: $grayP;
-          line-height: 1.8em;
+          line-height: 1.5em;
         }
       }
     }
@@ -3427,6 +3435,17 @@ div[id^='google-map-contacts-'] {
         }
       }
     }
+
+    &__reviews {
+      .custom-carousel {
+        .item {
+          .reviews-text {
+            font-size: calc(10px + 1vw);
+
+          }
+        }
+      }
+    }
   }
 }
 
@@ -4052,7 +4071,7 @@ div[id^='google-map-contacts-'] {
     }
     .mobile-reviews-carousel {
       .reviews-text {
-        font-size: 0.9em;
+        font-size: 0.85em;
       }
     }
   }

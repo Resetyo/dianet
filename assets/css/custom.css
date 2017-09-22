@@ -415,7 +415,7 @@ div[id^='google-map-contacts-'] {
   text-align: left; }
 
 .modal-cross {
-  padding: 5px 11px;
+  padding: 5px 7px;
   border-radius: 25px;
   background-color: #000;
   font-size: 30px;
@@ -445,7 +445,9 @@ div[id^='google-map-contacts-'] {
   line-height: 1.3;
   text-decoration: underline;
   display: inline-block;
-  transform: translateY(-70%); }
+  width: 49%;
+  float: right;
+  transform: translateY(-20%); }
   .modal-compliance:hover, .modal-compliance:focus, .modal-compliance:active {
     color: #eff0f4;
     text-decoration: none; }
@@ -607,7 +609,7 @@ div[id^='google-map-contacts-'] {
         height: auto !important;
         margin: 0;
         top: 40px;
-        left: 14vw;
+        left: 14vw !important;
         bottom: 45px;
         position: absolute;
         width: 2px; }
@@ -1617,13 +1619,18 @@ textarea:-webkit-autofill:focus,
       position: absolute;
       top: 50%;
       transform: translateY(-50%); }
+    .content__reviews .custom-carousel .item .carousel-divider {
+      position: absolute;
+      left: 11vw; }
     .content__reviews .custom-carousel .item .carousel-text {
+      width: 95%;
       margin-top: 0;
       padding-left: 12vw; }
       .content__reviews .custom-carousel .item .carousel-text h4 {
         margin-top: 0;
         letter-spacing: 1px;
-        font-size: 1em; }
+        font-size: 1em;
+        line-height: 1; }
     .content__reviews .custom-carousel .item .reviews-subheader {
       color: #b8b7bc;
       margin-bottom: 15px;
@@ -1632,7 +1639,7 @@ textarea:-webkit-autofill:focus,
     .content__reviews .custom-carousel .item .reviews-text {
       letter-spacing: -0.6px;
       color: #6B6E77;
-      line-height: 1.8em; }
+      line-height: 1.5em; }
     .content__reviews__action {
       overflow: hidden;
       padding-top: 2vw;
@@ -2627,7 +2634,9 @@ textarea:-webkit-autofill:focus,
     margin-right: -10px; }
     .content__gray-brickets__partners > div {
       padding-left: 10px;
-      padding-right: 10px; } }
+      padding-right: 10px; }
+  .content__reviews .custom-carousel .item .reviews-text {
+    font-size: calc(10px + 1vw); } }
 
 @media (max-width: 680px) {
   .content .mobile-main-home-carousel {
@@ -3029,7 +3038,7 @@ textarea:-webkit-autofill:focus,
   .content .mobile-main-home-carousel .owl-item p {
     font-size: 0.8em; }
   .content .mobile-reviews-carousel .reviews-text {
-    font-size: 0.9em; } }
+    font-size: 0.85em; } }
 
 @media (max-width: 384px) {
   .content__brickets__block__div ul {
