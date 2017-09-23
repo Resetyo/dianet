@@ -1700,6 +1700,9 @@ textarea:-webkit-autofill:focus,
     background-repeat: no-repeat;
     background-position: center 55%;
     background-size: cover; }
+    .content__address-check > div {
+      position: relative;
+      z-index: 2; }
     .content__address-check__shaded {
       background: rgba(0, 0, 0, 0.6);
       position: fixed;
@@ -1851,7 +1854,8 @@ textarea:-webkit-autofill:focus,
   .content__banner-trio {
     color: #fff;
     text-align: center;
-    display: flex; }
+    display: flex;
+    background: url("../images/c5.jpg") no-repeat center 80%/150%; }
     .content__banner-trio > div {
       margin: auto; }
     .content__banner-trio h5 {
@@ -1859,19 +1863,13 @@ textarea:-webkit-autofill:focus,
       font-size: 1.5em; }
     .content__banner-trio a {
       top: calc(30px + 2vw); }
-    .content__banner-trio:before {
-      background: url("../images/c5.jpg") no-repeat center 80%/150%; }
     .content__banner-trio-hosting {
-      background: rgba(34, 35, 40, 0.5); }
-      .content__banner-trio-hosting:before {
-        background: url("../images/chassis.jpg") no-repeat center center/cover; }
+      background: url("../images/chassis.jpg") no-repeat center center/cover; }
     .content__banner-trio-gossector {
-      background: rgba(34, 35, 40, 0.5); }
+      background: url("../images/flag.jpg") no-repeat center center/cover; }
       .content__banner-trio-gossector h5 {
         font-size: 1.3em; }
-      .content__banner-trio-gossector:before {
-        background: url("../images/flag.jpg") no-repeat center center/cover; }
-    .content__banner-trio-payment:before {
+    .content__banner-trio-payment {
       background: url("../images/ccard.jpg") no-repeat center center/cover; }
   .content__light-shadow {
     z-index: 6;

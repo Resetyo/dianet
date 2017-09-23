@@ -2098,6 +2098,10 @@ div[id^='google-map-contacts-'] {
     background-repeat: no-repeat;
     background-position: center 55%;
     background-size: cover;
+    & > div {
+      position: relative;
+      z-index: 2;
+    }
     &__shaded {
       background: rgba(0, 0, 0, 0.6);
       position: fixed;
@@ -2286,6 +2290,7 @@ div[id^='google-map-contacts-'] {
     color: #fff;
     text-align: center;
     display: flex;
+    background: url('../images/c5.jpg') no-repeat center 80% / 150%;
     & > div {
       margin: auto;
     }
@@ -2296,25 +2301,16 @@ div[id^='google-map-contacts-'] {
     a {
       top: calc(30px + 2vw);
     }
-    &:before {
-      background: url('../images/c5.jpg') no-repeat center 80% / 150%;
-    }
     &-hosting {
-      background: rgba(34, 35, 40, 0.5);
-      &:before {
-        background: url('../images/chassis.jpg') no-repeat center center / cover;
-      }
+      background: url('../images/chassis.jpg') no-repeat center center / cover;
     }
     &-gossector {
-      background: rgba(34, 35, 40, 0.5);
+      background: url('../images/flag.jpg') no-repeat center center / cover;
       h5 {
         font-size: 1.3em;
       }
-      &:before {
-        background: url('../images/flag.jpg') no-repeat center center / cover;
-      }
     }
-    &-payment:before {
+    &-payment {
       background: url('../images/ccard.jpg') no-repeat center center / cover;
     }
   }
