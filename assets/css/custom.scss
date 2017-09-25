@@ -2104,12 +2104,12 @@ div[id^='google-map-contacts-'] {
     }
     &__shaded {
       background: rgba(0, 0, 0, 0.6);
-      position: fixed;
+      position: fixed !important;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: 7;
+      z-index: 7 !important;
     }
 
     &:before {
